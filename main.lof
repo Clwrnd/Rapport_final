@@ -1,0 +1,55 @@
+\babel@toc {french}{}\relax 
+\contentsline {figure}{\numberline {1}{\ignorespaces Schéma équivalent d'un moteur à courant continu}}{5}{figure.caption.4}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Structure globale du système}}{6}{figure.caption.5}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Diagramme de Gant prédictif}}{7}{figure.caption.6}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Fichier Matlab de déclaration des constantes: Moteur seul sans frottements ni charge \hyperref [sec:arb]{*}}}{8}{figure.caption.7}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Schéma bloc Simulink du moteur seul sans frottements ni charge \hyperref [sec:arb]{*}}}{9}{figure.caption.8}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Essai pour la détermination de la MCC équivalente sur PSIM \hyperref [sec:arb]{*}}}{9}{figure.caption.9}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Schéma de l'essai}}}{9}{subfigure.6.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Caractéristiques des deux MCC}}}{9}{subfigure.6.2}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Moteur seul sans frottements ni charge sur PSIM \hyperref [sec:arb]{*}}}{10}{figure.caption.10}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Comparaison Matlab/PSIM moteur seul: courant d'induit \hyperref [sec:arb]{*}}}{11}{figure.caption.11}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Réponse globale}}}{11}{subfigure.8.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Zoom sur le pic de courant}}}{11}{subfigure.8.2}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Comparaison Matlab/PSIM moteur seul: vitesse \hyperref [sec:arb]{*} }}{11}{figure.caption.12}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Réponse globale}}}{11}{subfigure.9.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Zoom sur le régime permanent}}}{11}{subfigure.9.2}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Schéma équivalent du système avec une charge}}{12}{figure.caption.13}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Montage du système muni des éléments de frottement et de la charge simulés sur PSIM \hyperref [sec:arb]{*}}}{13}{figure.caption.14}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Montage du système muni des éléments de frottement et de la charge simulé sur Matlab \hyperref [sec:arb]{*}}}{13}{figure.caption.15}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Comparaison des courants induit simulés sur Matlab en bleu et sur PSIM en rouge \hyperref [sec:arb]{*}}}{14}{figure.caption.16}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Zoom sur le pic de courant \hyperref [sec:arb]{*}}}{14}{figure.caption.17}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Comparaison des vitesses simulés sur Matlab en bleu et sur PSIM en rouge \hyperref [sec:arb]{*}}}{15}{figure.caption.18}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Zoom sur le régime permanent \hyperref [sec:arb]{*}}}{15}{figure.caption.19}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Schéma de principe d'un hacheur en pont}}{17}{figure.caption.20}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Signaux de commande MLI du hacheur}}{17}{figure.caption.21}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Implémentation du hacheur sur PSIM \hyperref [sec:arb]{*}}}{18}{figure.caption.22}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Signal d’entrée de la MCC}}{18}{figure.caption.23}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Modélisation de la commande sous PSIM \hyperref [sec:arb]{*}}}{19}{figure.caption.24}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Modélisation de la commande sous Matlab \hyperref [sec:arb]{*}}}{19}{figure.caption.25}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Reproduction de la formule $<U_{AB}>$ sous PSIM \hyperref [sec:arb]{*}}}{20}{figure.caption.26}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Courant d'induit moteur avec hacheur (vert) et courant d'induit moteur avec modélisation du hacheur (rouge) \hyperref [sec:arb]{*}}}{21}{figure.caption.27}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Vitesse moteur avec hacheur (vert) et vitesse moteur avec modélisation du hacheur (rouge) \hyperref [sec:arb]{*}}}{21}{figure.caption.28}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Zoom sur l'ondulation de vitesse \hyperref [sec:arb]{*}}}{22}{figure.caption.29}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Schéma-bloc du système global}}{23}{figure.caption.30}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Schéma-bloc simplifié du système global}}{23}{figure.caption.31}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Schéma-bloc Simulink \hyperref [sec:arb]{*}}}{24}{figure.caption.32}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Comparaison du courant d'induit issu du schéma global et du modèle \hyperref [sec:arb]{*}}}{24}{figure.caption.33}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Boucle fermée de courant \hyperref [sec:arb]{*}}}{25}{figure.caption.34}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Réponse asservie du courant d'induit \hyperref [sec:arb]{*}}}{25}{figure.caption.35}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Schéma de vérification de l'asservissement de courant sur PSIM \hyperref [sec:arb]{*}}}{26}{figure.caption.36}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Courbes de vérification de l'asservissement de courant sur PSIM \hyperref [sec:arb]{*}}}{26}{figure.caption.37}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Fonction du huitième ordre \hyperref [sec:arb]{*}}}{27}{figure.caption.38}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Comparaison des 3 modèles \hyperref [sec:arb]{*}}}{28}{figure.caption.39}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Schéma-bloc de l'asservissement de vitesse final}}{29}{figure.caption.40}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Asservissement simplifié de la vitesse}}{30}{figure.caption.41}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Graphe de la vitesse asservie \hyperref [sec:arb]{*}}}{30}{figure.caption.42}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Vérification de l'asservissement de vitesse: Schéma PSIM \hyperref [sec:arb]{*} }}{31}{figure.caption.43}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Courbes de vérification de l’asservissement de vitesse sur PSIM \hyperref [sec:arb]{*}}}{31}{figure.caption.44}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Modifications prenant en compte les capteurs \hyperref [sec:arb]{*}}}{32}{figure.caption.45}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering Sur Matlab}}}{32}{subfigure.42.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering Sur PSIM}}}{32}{subfigure.42.2}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Schéma-bloc de l'asservissement avec capteurs \hyperref [sec:arb]{*} }}{33}{figure.caption.46}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Vérification de l'asservissement avec capteur (vitesse) \hyperref [sec:arb]{*} }}{33}{figure.caption.47}%
+\contentsline {figure}{\numberline {45}{\ignorespaces Vérification de l’asservissement avec capteur (courant) \hyperref [sec:arb]{*} }}{34}{figure.caption.48}%
+\contentsline {figure}{\numberline {46}{\ignorespaces Signaux liés au codeur incrémental}}{34}{figure.caption.49}%

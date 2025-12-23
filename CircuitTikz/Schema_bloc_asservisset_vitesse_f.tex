@@ -1,0 +1,30 @@
+\begin{tikzpicture}[
+    block/.style = {draw, rectangle, minimum height=1cm, minimum width=1.8cm, align=center},
+    sum/.style   = {draw, circle, node distance=1cm, inner sep=0pt, minimum size=6mm},
+    >={Stealth}
+]
+
+% Noeuds
+\node[sum] (sum) {};
+\node[block, right=1.5cm of sum] (C) {$C_\Omega(p)$};
+\node[block, right=1.8cm of C] (K) {$K_\Phi$};
+\node[block, right=1.8cm of K] (G) {$\dfrac{1}{2Jp + f_{eq}}$};
+\node[right=1.2cm of G] (output) {$\Omega$};
+
+% Signes du sommateur
+\node at ([xshift=-0.1cm,yshift=0.1cm]sum.center) {\small $+$};
+\node at ([xshift=-0cm,yshift=-0.15cm]sum.center) {\small $-$};
+
+% Connexions principales
+\draw[->] (sum) -- node[above] {} (C);
+\draw[->] (C) -- node[above] {$I_{ref} = i_M$} (K);
+\draw[->] (K) -- (G);
+\draw[->] (G) -- (output);
+
+% Boucle de rétroaction
+\draw[->] (output) |- ++(0,-1.4) -| (sum);
+
+% Entrée
+\draw[->] ++(-1.2,0) node[left] {$\Omega_{ref}$} -- (sum);
+
+\end{tikzpicture}

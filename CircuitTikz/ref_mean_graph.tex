@@ -1,0 +1,12 @@
+\begin{tikzpicture}
+	% Paths, nodes and wires:
+	\draw (-4.012, -0.089) -- (-4.012, 0.161);
+	\draw (-0, -0.069) -- (-0, 0.181);
+	\node[shape=rectangle, minimum width=1.59cm, minimum height=0.586cm] at (-1.813, -0.189){} node[anchor=north west, align=left, text width=1.202cm, inner sep=6pt] at (-2.625, 0.121){\small $kT+\alpha T$};
+	\node[shape=rectangle, minimum width=1.715cm, minimum height=0.59cm] at (0.375, -0.188){} node[anchor=north west, align=left, text width=1.327cm, inner sep=6pt] at (-0.5, 0.125){\small $(k+1)T$};
+	\node[shape=rectangle, minimum width=1.59cm, minimum height=0.586cm] at (3.062, -0.189){} node[anchor=north west, align=left, text width=1.202cm, inner sep=6pt] at (2.25, 0.121){\footnotesize $t$};
+	\path[draw={rgb,255:red,0;green,0;blue,255}] (-4, -0) -- (-4, 1.75) -- (-2, 1.75) -- (-2, -0) |- (-0, -0) -| (-0, 1.75) -- (2, 1.75) -- (2, -0) -- (2, -0) -| (2, 1.75) -- (2, 1.75) -- (2, -0);
+	\draw (-2, -0.063) -- (-2, 0.187);
+	\node[shape=rectangle, minimum width=1.09cm, minimum height=0.59cm] at (-3.813, -0.188){} node[anchor=north west, align=left, text width=0.702cm, inner sep=6pt] at (-4.375, 0.125){$kT$};
+	\draw[-latex] (-4, -0) -- (2.5, -0);
+\end{tikzpicture}

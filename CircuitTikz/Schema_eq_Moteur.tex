@@ -1,0 +1,21 @@
+\usetikzlibrary{shapes.geometric}
+\begin{tikzpicture}
+	% Paths, nodes and wires:
+	\draw (1, -0.25) to[european resistor, l_={$R$}] (1, 1.75);
+	\draw (1, 1.75) to[american inductor, mirror, l_={$L$}] (1, 3.75);
+	\draw (1, -0.25) to[battery1, l={$E$}] (1, -1.75);
+	\draw (1, 3.75) -- (-1.25, 3.75);
+	\draw[-latex] (-2, 3.75) -- (-1.25, 3.75);
+	\draw (1, -1.75) -- (-2, -1.75);
+	\draw[-latex] (-2, -1.5) -- (-2, 3.5);
+	\draw[-latex] (0.5, 2.25) -- (0.5, 3.25);
+	\draw[-latex] (0.5, 0.25) -- (0.5, 1.25);
+	\draw[-latex] (0.25, -1.5) -- (0.25, -0.5);
+	\node[shape=rectangle, minimum width=0.715cm, minimum height=0.715cm] at (-2.25, 0.875){} node[anchor=north west, align=left, text width=0.327cm, inner sep=6pt] at (-2.625, 1.25){$U$};
+	\node[shape=rectangle, minimum width=0.715cm, minimum height=0.715cm] at (0.125, 2.75){} node[anchor=north west, align=left, text width=0.327cm, inner sep=6pt] at (-0.25, 3.125){$U_L$};
+	\node[shape=rectangle, minimum width=0.715cm, minimum height=0.715cm] at (0.125, 0.625){} node[anchor=north west, align=left, text width=0.327cm, inner sep=6pt] at (-0.25, 1){$U_R$};
+	\node[shape=rectangle, minimum width=0.715cm, minimum height=0.715cm] at (-0.125, -1.125){} node[anchor=north west, align=left, text width=0.327cm, inner sep=6pt] at (-0.5, -0.75){$U_E$};
+	\node[shape=rectangle, minimum width=0.715cm, minimum height=0.59cm] at (-1.625, 3.938){} node[anchor=north west, align=left, text width=0.327cm, inner sep=6pt] at (-2, 4.25){$I$};
+	\node[shape=ellipse, draw={rgb,255:red,181;green,0;blue,}, line width=1pt, minimum width=3.965cm, minimum height=5.158cm] at (0.586, 0.903){};
+	\node[shape=rectangle, minimum width=0.715cm, minimum height=0.715cm] at (1.375, 1.75){} node[anchor=north west, align=left, text width=0.327cm, inner sep=6pt] at (1, 2.125){\textcolor{rgb,255:red,181;green,0;blue,0}{Induit}};
+\end{tikzpicture}

@@ -1,0 +1,92 @@
+\subsubsection{Prise en compte des capteurs}
+
+Comme mentionné précédemment, notre système réel comporte des capteurs pour mesurer la vitesse de rotation de la MCC. En particulier, nous disposons de deux types de capteurs de vitesse différents : une dynamo-tachymétrique et un codeur incrémental. Nous considérons que leurs constantes de temps sont largement plus rapides que celles de notre système et les modéliserons donc seulement par des gains. Pour la dynamo-tachymétrique, son gain est spécifié comme étant de 6 V pour 1000 tr/min. Nous veillerons à diviser ce gain par deux pour faire en sorte que la tension de commande reste inférieur à 15 V. \\
+
+Finalement, dans notre modèle Matlab, la vitesse de sortie est en $rad/s$, on multiplie donc cette vitesse par $\frac{30}{\pi}$ pour la convertir en tr/min. Le gain final à appliquer sur Matlab pour la dynamo-tachymétrique est donc  : $$k=\dfrac{1}{2}\cdot \dfrac{6}{1000}\cdot\dfrac{30}{\pi}\approx 28\cdot 10^{-3} $$
+
+Sur PSIM, le capteur nous retourne déjà une vitesse en $tr/min$, il suffira donc d'appliquer le gain de $\frac{3}{1000}$. Les modifications apportées sont présentées ci-dessous:
+\begin{figure}[H]
+    \centering
+    \subfloat[\centering Sur Matlab]{{\includegraphics[width=9cm]{Images/Modelisation/MATLAB/NV_Gain_Matlab.jpg} }}%
+    \qquad
+    \subfloat[\centering Sur PSIM]{{\includegraphics[width=6cm]{Images/Modelisation/PSIM/NV_Gain_PSIM.jpg}}}%
+    \caption{Modifications prenant en compte les capteurs \hyperref[sec:arb]{*}}
+    \label{}
+\end{figure}
+Pour le codeur incrémental, nous ferons en sorte qu'il ait un gain identique à la  dynamo-tachymétrique pour n'avoir qu'à dimensionner qu'un seul correcteur. \\ \\
+Après calcul des nouveaux correcteurs  grâce au \textit{PID Tuner}, nous obtenons les valeurs suivantes: $$C(p)=P\Big(1+I\dfrac{1}{p}\Big)~\text{avec}~P=2.27~\text{et}~I=22.8~s^{-1}$$
+Comme précédemment, nous avons vérifié ce correcteur et obtenu des résultats concluants. Cependant, nous allons cette fois-ci mettre en avant une comparaison complète de notre système. Pour cela nous simulerons le système complet et corrigé (courant et vitesse) sur PSIM, ainsi que le système complet et corrigé \textbf{sans les hypothèses simplificatrices} sur Matlab. C'est-à-dire que nous garderons tous les éléments de notre schéma-bloc hormis les éléments évoqués dans la partie préliminaire à l'asservissement.
+\newpage
+Nous avons  ainsi le schéma Simulink suivant:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images//Modelisation/MATLAB/Matlab_complet.jpg}
+    \caption{Schéma-bloc de l'asservissement avec capteurs \hyperref[sec:arb]{*} }
+    \label{}
+\end{figure}
+Où $G$ et $H_0$ sont les fonctions de transfert permettant d'obtenir respectivement le courant (ou sa tension image considérant un gain unitaire) à partir de la commande issue des correcteurs et la tension image de la vitesse à partir du courant moteur.
+Le schéma utilisé pour PSIM est le même que celui utilisé pour la vérification de l'asservissement de vitesse, ce dernier faisant déjà intervenir tous les éléments.
+
+
+Nous retrouverons sur les figures suivantes le modèle avec le hacheur de PSIM en rouge et le modèle Matlab en bleu.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Images/Modelisation/MATLAB/Comp_syst_complet_asservi_vitesse.png}
+    \caption{Vérification de l'asservissement avec capteur (vitesse) \hyperref[sec:arb]{*} }
+    \label{}
+\end{figure}
+\textit{On a en abscisse le temps en seconde et en ordonnée l'image de la vitesse en volt}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{Images/Modelisation/MATLAB/Comp_syst_complet_asservi_courant.png}
+    \caption{ Vérification de l’asservissement avec capteur (courant) \hyperref[sec:arb]{*} }
+    \label{}
+\end{figure}
+\textit{On a en abscisse le temps en seconde et en ordonnée le courant en ampère (ou son image en volt).}
+\\
+
+On observe une concordance parfaite qui valide complètement notre cos correcteurs finaux.
+
+\subsection{Lien entre valeur de référence et valeur moyenne}
+Le but d'un asservissement est de faire tendre une grandeur
+caractéristique d'un système vers une valeur de référence (une consigne). Cependant, nous avons vu dans les études précédentes que les grandeurs que nous avons à asservir présentent des ondulations plus ou moins importantes. Il est donc légitime de se questionner sur le sens physique de la valeur de référence, étant donné que, la sortie n'étant pas constante, il est  théoriquement impossible pour le système d'atteindre cette valeur. Dans notre cas, en considérant le fait que nous avons un intégrateur dans nos correcteurs, nous allons montrer que les valeurs de références $\Omega_{ref}$ et $I_{Mref}$ sont égales aux valeurs moyennes $<\Omega>$ et $<i_M>$. Cela implique que c'est la valeur moyenne en sortie de notre système que nous allons asservir. La valeur de référence fixera la valeur moyenne de sortie du système.
+Nous allons démontrer cela pour le courant, et le cas de la vitesse sera purement analogue. \\ \\
+Soit $y$ la variable d'état supplémentaire dûe à la présence d'un intégrateur dans notre système. On sait que: $$y(t)=y(t_0)+\int_{t_0}^t(I_{Mref}-i_M)dt$$
+Où $t_0$ est l'instant initial, c'est-à-dire le moment auquel nous avons mis en route le système.\\\\
+Si l'on se place en régime permanent, on peut représenter la variation de courant comme suit:
+\begin{figure}[H]
+    \centering
+    \input{CircuitTikz/ref_mean_graph}
+    \caption{Signaux liés au codeur incrémental}
+\end{figure}
+
+Où $T$ représente une période de MLI du hacheur et $\alpha$ son rapport cyclique.\\ \\
+On peut en déduire que $i_M\bigl( ( k+1)T\bigl)=i_M\bigl(kT\bigl)$. De plus, on a : $$
+    \left\{
+    \begin{array}{*3{>{\displaystyle}c}p{5cm}}
+        y\bigl(( k+1)T\bigl)=y(t_0)+\int_{t_0}^{ (k+1)T}(I_{Mref}-i_M)dt \\
+        y\bigl(kT\bigl)=y(t_0)+\int_{t_0}^{ kT}(I_{Mref}-i_M)dt
+    \end{array}
+    \right.
+$$
+Ainsi: $$y\bigl(( k+1)T\bigl)- y\bigl(kT\bigl)=\int_{kT}^{ (k+1)T}(I_{Mref}-i_M)dt)=T\cdot I_{Mref}-\int_{kT}^{ (k+1)T}i_Mdt=0$$
+Il est donc enfin possible d'obtenir le résultat final:
+$$T\cdot I_{Mref}-\int_{kT}^{ (k+1)T}i_Mdt=0\Leftrightarrow I_{Mref}=\frac{1}{T}\int_{kT}^{ (k+1)T}i_Mdt=~<i_M>$$
+
+
+
+\section{Conception et dimensionnement des circuits électroniques}
+
+\subsection{Asservissements}
+\subsubsection{Correcteur de vitesse}
+\subsubsection{Correcteur de courant}
+\subsubsection{Comparateur}
+
+\subsection{Circuit de mise en forme du signal tachymétrique}
+
+\subsection{Circuit de mise en forme du signal du codeur incrémental}
+
+\subsection{Limiteur de courant}
+\subsection{Limiteur de la tension de commande}
+\subsection{Indicateur de sens de rotation}
+

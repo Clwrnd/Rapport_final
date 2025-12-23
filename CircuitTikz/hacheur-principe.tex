@@ -1,0 +1,15 @@
+\begin{tikzpicture}[scale=1.25, transform shape]
+	% Paths, nodes and wires:
+	\draw (-1.5, -1) to[european voltage source, l={$V_e$}] (-1.5, 1.5);
+	\draw (0.5, 0.5) to[cute open switch, l={$K_1$}] (0.5, 2.5);
+	\draw (0.5, -2.5) to[cute open switch, l={$K_2$}] (0.5, -0.5);
+	\draw (4, 0.438) to[cute open switch, l={$K_3$}] (4, 2.438);
+	\draw (4, -2.5) to[cute open switch, l={$K_4$}] (4, -0.5);
+	\draw (4, -0) to[european current source, l={$I_s$}] (0.5, -0);
+	\draw (0.5, 2.5) -- (-1.5, 2.5) -- (-1.5, 1.5);
+	\draw (-1.5, -1) -- (-1.5, -2.5) -- (0.5, -2.5);
+	\draw (0.5, -2.5) -- (4, -2.5);
+	\draw (4, 2.5) -- (0.5, 2.5);
+	\draw (4, 0.438) -- (4, -0.5);
+	\draw (0.5, 0.5) -- (0.5, -0.5);
+\end{tikzpicture}

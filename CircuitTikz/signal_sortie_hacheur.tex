@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+	% Paths, nodes and wires:
+	\node[shape=rectangle, fill={rgb,255:red,128;green,255;blue,255}, fill opacity=0.5, minimum width=1cm, minimum height=2cm] at (2.5, -1){};
+	\node[shape=rectangle, fill={rgb,255:red,255;green,128;blue,128}, fill opacity=0.5, draw, line width=0.1pt, minimum width=1.996cm, minimum height=1.996cm] at (1, 1){};
+	\draw[-latex] (0, -3) -- (0, 3);
+	\draw[-latex] (-1, -0) -- (5, 0);
+	\path[draw={rgb,255:red,0;green,0;blue,255}] (0, 2) -- (2, 2) -- (2, -2) -- (3, -2) -- (3, 2) -- (5, 2);
+	\node[shape=rectangle, minimum width=1.215cm, minimum height=1.09cm] at (1.125, 0.813){} node[anchor=north west, align=left, text width=0.827cm, inner sep=6pt] at (0.5, 1.375){\huge $\oplus$};
+	\node[shape=rectangle, minimum width=1.215cm, minimum height=1.09cm] at (2.625, -1.063){} node[anchor=north west, align=left, text width=0.827cm, inner sep=6pt] at (2, -0.5){\huge $\ominus$};
+	\draw (2, 0.136) -- (2, -0.114);
+	\draw (3.002, 0.126) -- (3.002, -0.124);
+	\draw[dash pattern={on 1.6pt off 3.2pt}] (0, -2) -- (2, -2);
+	\node[shape=rectangle, minimum width=1.215cm, minimum height=1.09cm] at (-0.25, -2.187){} node[anchor=north west, align=left, text width=0.827cm, inner sep=6pt] at (-0.875, -1.625){\large -U};
+	\node[shape=rectangle, minimum width=1.215cm, minimum height=1.09cm] at (-0.125, 1.813){} node[anchor=north west, align=left, text width=0.827cm, inner sep=6pt] at (-0.75, 2.375){\large U};
+	\draw (0.097, 2) -- (-0.153, 2);
+	\draw (0.102, -2) -- (-0.148, -2);
+	\node[shape=rectangle, minimum width=1.215cm, minimum height=1.09cm] at (1.875, -0.437){} node[anchor=north west, align=left, text width=0.827cm, inner sep=6pt] at (1.25, 0.125){\small $\alpha T$};
+	\node[shape=rectangle, minimum width=1.215cm, minimum height=1.09cm] at (3.5, -0.437){} node[anchor=north west, align=left, text width=0.827cm, inner sep=6pt] at (2.875, 0.125){\small $ T$};
+	\draw[-latex] (1.75, -2.25) -- (2, -2.25);
+	\draw[-latex] (3.25, -2.25) -- (3, -2.25);
+	\draw (2, -2.25) -- (3, -2.25);
+	\node[shape=rectangle, minimum width=1.465cm, minimum height=1.09cm] at (2.5, -2.75){} node[anchor=north west, align=left, text width=1.077cm, inner sep=6pt] at (1.75, -2.187){\footnotesize $T-\alpha T$};
+\end{tikzpicture}

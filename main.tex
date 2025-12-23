@@ -1,0 +1,29 @@
+\documentclass[a4paper]{article}
+\input{Import}
+
+
+\begin{document}
+
+\input{Page_De_Garde}
+
+{ \hypersetup{hidelinks} \tableofcontents
+
+    \addtocontents{toc}
+
+    \newpage
+
+    \listoftables
+
+    \listoffigures
+}
+
+\newpage
+\pagestyle{fancy}
+
+\input{Parties/inter.tex}
+\input{Parties/final.tex}
+
+\input{Parties/arb_fig}
+
+
+\end{document}
