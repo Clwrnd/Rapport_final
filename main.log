@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.10)  15 JAN 2026 17:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.10)  15 JAN 2026 17:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -950,15 +950,6 @@ LaTeX Warning: Label `fig:face-cms' multiply defined.
 
 
 LaTeX Warning: Label `fig:face-traversants' multiply defined.
-
-
-LaTeX Warning: Label `fig:placeholder' multiply defined.
-
-
-LaTeX Warning: Label `fig:placeholder' multiply defined.
-
-
-LaTeX Warning: Label `fig:placeholder' multiply defined.
 
 
 LaTeX Warning: Label `fig:placeholder' multiply defined.
@@ -2484,47 +2475,47 @@ File: Images/Divers/Logo-INSAS.png Graphic file (type png)
 Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 1.
 (pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
  [66]
-Overfull \hbox (10.47122pt too wide) in paragraph at lines 13--14
+Overfull \hbox (10.47122pt too wide) in paragraph at lines 11--12
 []\T1/lmr/m/n/10 Figure ([][]6[][]) :[][]/Mo-de-li-sa-tion et si-mu-la-tion du sys-teme en boucle ou-ver-te/P-SIM/-Mo-teur_a_vide_PSIM.psimsch[][] 
  []
 
 
-Overfull \hbox (10.47122pt too wide) in paragraph at lines 15--16
+Overfull \hbox (10.47122pt too wide) in paragraph at lines 13--14
 []\T1/lmr/m/n/10 Figure ([][]7[][]) :[][]/Mo-de-li-sa-tion et si-mu-la-tion du sys-teme en boucle ou-ver-te/P-SIM/-Mo-teur_a_vide_PSIM.psimsch[][] 
  []
 
 
-Overfull \hbox (24.94283pt too wide) in paragraph at lines 25--26
+Overfull \hbox (24.94283pt too wide) in paragraph at lines 23--24
 []\T1/lmr/m/n/10 Figure ([][]13[][]) :[][]/Frot-te-ments et char-ges/-MAT-LAB/-Com-pa-rai-son_courant_et_vitesse_frottements_et_charges.m[][] 
  []
 
 
-Overfull \hbox (24.94283pt too wide) in paragraph at lines 27--28
+Overfull \hbox (24.94283pt too wide) in paragraph at lines 25--26
 []\T1/lmr/m/n/10 Figure ([][]14[][]) :[][]/Frot-te-ments et char-ges/-MAT-LAB/-Com-pa-rai-son_courant_et_vitesse_frottements_et_charges.m[][] 
  []
 
 
-Overfull \hbox (24.94283pt too wide) in paragraph at lines 29--30
+Overfull \hbox (24.94283pt too wide) in paragraph at lines 27--28
 []\T1/lmr/m/n/10 Figure ([][]15[][]) :[][]/Frot-te-ments et char-ges/-MAT-LAB/-Com-pa-rai-son_courant_et_vitesse_frottements_et_charges.m[][] 
  []
 
 
-Overfull \hbox (24.94283pt too wide) in paragraph at lines 31--32
+Overfull \hbox (24.94283pt too wide) in paragraph at lines 29--30
 []\T1/lmr/m/n/10 Figure ([][]16[][]) :[][]/Frot-te-ments et char-ges/-MAT-LAB/-Com-pa-rai-son_courant_et_vitesse_frottements_et_charges.m[][] 
  []
 
 
-Overfull \hbox (18.33243pt too wide) in paragraph at lines 59--60
+Overfull \hbox (18.33243pt too wide) in paragraph at lines 57--58
 []\T1/lmr/m/n/10 Figure ([][]35[][]) :[][]/As-ser-vis-se-ment de vi-tes-se/-MAT-LAB/-Fonc-tion_de_transfert_courant_et_vitesse_MATLAB.m[][] 
  []
 
 
-Overfull \hbox (21.97131pt too wide) in paragraph at lines 61--62
+Overfull \hbox (21.97131pt too wide) in paragraph at lines 59--60
 []\T1/lmr/m/n/10 Figure ([][]36[][]) :[][]/As-ser-vis-se-ment de vi-tes-se/-MAT-LAB/-Com-pa-rai-sons_asservissement_de_vitesse_SIMULINK.slx[][] 
  []
 
 
-Overfull \hbox (21.97131pt too wide) in paragraph at lines 63--64
+Overfull \hbox (21.97131pt too wide) in paragraph at lines 61--62
 []\T1/lmr/m/n/10 Figure ([][]39[][]) :[][]/As-ser-vis-se-ment de vi-tes-se/-MAT-LAB/-Com-pa-rai-sons_asservissement_de_vitesse_SIMULINK.slx[][] 
  []
 
@@ -2546,17 +2537,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: AAAA0815555F4DEF6CEAF025E5E2B288;13755.
  ) 
 Here is how much of TeX's memory you used:
- 66722 strings out of 475247
- 1731728 string characters out of 5757792
- 2365044 words of memory out of 5000000
- 87142 multiletter control sequences out of 15000+600000
+ 66725 strings out of 475247
+ 1731752 string characters out of 5757792
+ 2369331 words of memory out of 5000000
+ 87145 multiletter control sequences out of 15000+600000
  673427 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  104i,16n,106p,1015b,1318s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbsy10.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy9.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (68 pages, 13956453 bytes).
+Output written on main.pdf (68 pages, 13962877 bytes).
 PDF statistics:
- 1386 PDF objects out of 1440 (max. 8388607)
+ 1418 PDF objects out of 1440 (max. 8388607)
  244 named destinations out of 1000 (max. 500000)
  954 words of extra memory for PDF output out of 10000 (max. 10000000)
 
