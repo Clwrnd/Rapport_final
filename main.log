@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.10)  15 JAN 2026 16:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.10)  15 JAN 2026 17:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -954,6 +954,39 @@ LaTeX Warning: Label `fig:face-traversants' multiply defined.
 
 LaTeX Warning: Label `fig:placeholder' multiply defined.
 
+
+LaTeX Warning: Label `fig:placeholder' multiply defined.
+
+
+LaTeX Warning: Label `fig:placeholder' multiply defined.
+
+
+LaTeX Warning: Label `fig:placeholder' multiply defined.
+
+
+LaTeX Warning: Label `fig:placeholder' multiply defined.
+
+
+LaTeX Warning: Label `fig:placeholder' multiply defined.
+
+
+LaTeX Warning: Label `fig:placeholder' multiply defined.
+
+
+LaTeX Warning: Label `fig:placeholder' multiply defined.
+
+
+LaTeX Warning: Label `fig:face-cms' multiply defined.
+
+
+LaTeX Warning: Label `fig:face-traversants' multiply defined.
+
+
+LaTeX Warning: Label `fig:face-cms' multiply defined.
+
+
+LaTeX Warning: Label `fig:face-traversants' multiply defined.
+
 )
 \openout1 = `main.aux'.
 
@@ -1055,7 +1088,7 @@ Package hyperref Info: Link coloring ON on input line 5.
 \openout4 = `main.out'.
 
  (Page_De_Garde.tex
-<Images/Divers/Logo-INSAS.png, id=250, 602.25pt x 130.23656pt>
+<Images/Divers/Logo-INSAS.png, id=274, 602.25pt x 130.23656pt>
 File: Images/Divers/Logo-INSAS.png Graphic file (type png)
 <use Images/Divers/Logo-INSAS.png>
 Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 5.
@@ -1162,7 +1195,7 @@ File: Images/Divers/Logo-INSAS.png Graphic file (type png)
 Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 130.
 (pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
 [7]
-<Images/Divers/gant.jpeg, id=573, 1095.3422pt x 447.17062pt>
+<Images/Divers/gant.jpeg, id=623, 1095.3422pt x 447.17062pt>
 File: Images/Divers/gant.jpeg Graphic file (type jpg)
 <use Images/Divers/gant.jpeg>
 Package pdftex.def Info: Images/Divers/gant.jpeg  used on input line 158.
@@ -1196,12 +1229,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 200--201
 
  []
 
-<Images//Modelisation//MATLAB/Matlab_premire_simu.jpeg, id=584, 901.86937pt x 282.30469pt>
+<Images//Modelisation//MATLAB/Matlab_premire_simu.jpeg, id=634, 901.86937pt x 282.30469pt>
 File: Images//Modelisation//MATLAB/Matlab_premire_simu.jpeg Graphic file (type jpg)
 <use Images//Modelisation//MATLAB/Matlab_premire_simu.jpeg>
 Package pdftex.def Info: Images//Modelisation//MATLAB/Matlab_premire_simu.jpeg  used on input line 207.
 (pdftex.def)             Requested size: 241.84843pt x 75.70206pt.
-<Images//Modelisation//MATLAB/Simulink_moteur_seul.png, id=587, 455.301pt x 177.7842pt>
+<Images//Modelisation//MATLAB/Simulink_moteur_seul.png, id=637, 455.301pt x 177.7842pt>
 File: Images//Modelisation//MATLAB/Simulink_moteur_seul.png Graphic file (type png)
 <use Images//Modelisation//MATLAB/Simulink_moteur_seul.png>
 Package pdftex.def Info: Images//Modelisation//MATLAB/Simulink_moteur_seul.png  used on input line 215.
@@ -1211,12 +1244,12 @@ File: Images/Divers/Logo-INSAS.png Graphic file (type png)
 Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 218.
 (pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
 [9 <./Images//Modelisation//MATLAB/Matlab_premire_simu.jpeg>]
-<Images/Modelisation/PSIM/PSIM_determination_Kphi.png, id=595, 313.17pt x 163.812pt>
+<Images/Modelisation/PSIM/PSIM_determination_Kphi.png, id=645, 313.17pt x 163.812pt>
 File: Images/Modelisation/PSIM/PSIM_determination_Kphi.png Graphic file (type png)
 <use Images/Modelisation/PSIM/PSIM_determination_Kphi.png>
 Package pdftex.def Info: Images/Modelisation/PSIM/PSIM_determination_Kphi.png  used on input line 229.
 (pdftex.def)             Requested size: 256.0748pt x 133.95175pt.
-<Images/Modelisation/PSIM/Caractéristiques_moteur_PSIM_determination_Kphi.png, id=596, 224.5188pt x 241.8636pt>
+<Images/Modelisation/PSIM/Caractéristiques_moteur_PSIM_determination_Kphi.png, id=646, 224.5188pt x 241.8636pt>
 File: Images/Modelisation/PSIM/Caractéristiques_moteur_PSIM_determination_Kphi.png Graphic file (type png)
 <use Images/Modelisation/PSIM/Caractéristiques_moteur_PSIM_determination_Kphi.png>
 Package pdftex.def Info: Images/Modelisation/PSIM/Caractéristiques_moteur_PSIM_determination_Kphi.png  used on input line 231.
@@ -1230,7 +1263,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 255--259
 
  []
 
-<Images//Modelisation//PSIM/PSIM moteur seul.png, id=610, 342.078pt x 258.7266pt>
+<Images//Modelisation//PSIM/PSIM moteur seul.png, id=660, 342.078pt x 258.7266pt>
 File: Images//Modelisation//PSIM/PSIM moteur seul.png Graphic file (type png)
 <use Images//Modelisation//PSIM/PSIM moteur seul.png>
 Package pdftex.def Info: Images//Modelisation//PSIM/PSIM moteur seul.png  used on input line 262.
@@ -1240,22 +1273,22 @@ File: Images/Divers/Logo-INSAS.png Graphic file (type png)
 Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 267.
 (pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
 [11 <./Images//Modelisation//PSIM/PSIM moteur seul.png>]
-<Images//Modelisation//MATLAB/comparaison moteur seul courant induit.jpeg, id=619, 1606.0pt x 739.76375pt>
+<Images//Modelisation//MATLAB/comparaison moteur seul courant induit.jpeg, id=669, 1606.0pt x 739.76375pt>
 File: Images//Modelisation//MATLAB/comparaison moteur seul courant induit.jpeg Graphic file (type jpg)
 <use Images//Modelisation//MATLAB/comparaison moteur seul courant induit.jpeg>
 Package pdftex.def Info: Images//Modelisation//MATLAB/comparaison moteur seul courant induit.jpeg  used on input line 275.
 (pdftex.def)             Requested size: 199.16928pt x 91.73653pt.
-<Images//Modelisation//MATLAB/Zoom comparaison moteur seul.jpeg, id=620, 1606.0pt x 734.745pt>
+<Images//Modelisation//MATLAB/Zoom comparaison moteur seul.jpeg, id=670, 1606.0pt x 734.745pt>
 File: Images//Modelisation//MATLAB/Zoom comparaison moteur seul.jpeg Graphic file (type jpg)
 <use Images//Modelisation//MATLAB/Zoom comparaison moteur seul.jpeg>
 Package pdftex.def Info: Images//Modelisation//MATLAB/Zoom comparaison moteur seul.jpeg  used on input line 277.
 (pdftex.def)             Requested size: 227.62204pt x 104.13046pt.
-<Images//Modelisation//MATLAB/comparaison vitesse matlab moteur seul.jpeg, id=623, 1606.0pt x 753.81625pt>
+<Images//Modelisation//MATLAB/comparaison vitesse matlab moteur seul.jpeg, id=673, 1606.0pt x 753.81625pt>
 File: Images//Modelisation//MATLAB/comparaison vitesse matlab moteur seul.jpeg Graphic file (type jpg)
 <use Images//Modelisation//MATLAB/comparaison vitesse matlab moteur seul.jpeg>
 Package pdftex.def Info: Images//Modelisation//MATLAB/comparaison vitesse matlab moteur seul.jpeg  used on input line 285.
 (pdftex.def)             Requested size: 227.62204pt x 106.83331pt.
-<Images//Modelisation//MATLAB/Zoom comparaison vitesse moteur seul Matlab.jpeg, id=624, 1606.0pt x 737.75626pt>
+<Images//Modelisation//MATLAB/Zoom comparaison vitesse moteur seul Matlab.jpeg, id=674, 1606.0pt x 737.75626pt>
 File: Images//Modelisation//MATLAB/Zoom comparaison vitesse moteur seul Matlab.jpeg Graphic file (type jpg)
 <use Images//Modelisation//MATLAB/Zoom comparaison vitesse moteur seul Matlab.jpeg>
 Package pdftex.def Info: Images//Modelisation//MATLAB/Zoom comparaison vitesse moteur seul Matlab.jpeg  used on input line 287.
@@ -1295,7 +1328,7 @@ File: Images/Divers/Logo-INSAS.png Graphic file (type png)
 Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 334.
 (pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
  [13]
-<Images/Modelisation/PSIM/PSIM_charge_frottements.png, id=649, 1150.2975pt x 412.54124pt>
+<Images/Modelisation/PSIM/PSIM_charge_frottements.png, id=699, 1150.2975pt x 412.54124pt>
 File: Images/Modelisation/PSIM/PSIM_charge_frottements.png Graphic file (type png)
 <use Images/Modelisation/PSIM/PSIM_charge_frottements.png>
 Package pdftex.def Info: Images/Modelisation/PSIM/PSIM_charge_frottements.png  used on input line 341.
@@ -1305,7 +1338,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 348--349
 
  []
 
-<Images/Modelisation/MATLAB/MATLAB_charge_frottement.png, id=654, 1939.245pt x 851.18pt>
+<Images/Modelisation/MATLAB/MATLAB_charge_frottement.png, id=704, 1939.245pt x 851.18pt>
 File: Images/Modelisation/MATLAB/MATLAB_charge_frottement.png Graphic file (type png)
 <use Images/Modelisation/MATLAB/MATLAB_charge_frottement.png>
 Package pdftex.def Info: Images/Modelisation/MATLAB/MATLAB_charge_frottement.png  used on input line 352.
@@ -1315,22 +1348,22 @@ File: Images/Divers/Logo-INSAS.png Graphic file (type png)
 Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 357.
 (pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
 [14 <./Images/Modelisation/PSIM/PSIM_charge_frottements.png> <./Images/Modelisation/MATLAB/MATLAB_charge_frottement.png>]
-<Images/Modelisation/MATLAB/MATLAB-frott_charges-comparaison_courants_induit.png, id=663, 3158.80125pt x 1604.99625pt>
+<Images/Modelisation/MATLAB/MATLAB-frott_charges-comparaison_courants_induit.png, id=713, 3158.80125pt x 1604.99625pt>
 File: Images/Modelisation/MATLAB/MATLAB-frott_charges-comparaison_courants_induit.png Graphic file (type png)
 <use Images/Modelisation/MATLAB/MATLAB-frott_charges-comparaison_courants_induit.png>
 Package pdftex.def Info: Images/Modelisation/MATLAB/MATLAB-frott_charges-comparaison_courants_induit.png  used on input line 364.
 (pdftex.def)             Requested size: 483.69687pt x 245.75955pt.
-<Images/Modelisation/MATLAB/MATLAB-frott_charges-zoom_sur_le_pic_courant.png, id=666, 3176.86874pt x 1626.075pt>
+<Images/Modelisation/MATLAB/MATLAB-frott_charges-zoom_sur_le_pic_courant.png, id=716, 3176.86874pt x 1626.075pt>
 File: Images/Modelisation/MATLAB/MATLAB-frott_charges-zoom_sur_le_pic_courant.png Graphic file (type png)
 <use Images/Modelisation/MATLAB/MATLAB-frott_charges-zoom_sur_le_pic_courant.png>
 Package pdftex.def Info: Images/Modelisation/MATLAB/MATLAB-frott_charges-zoom_sur_le_pic_courant.png  used on input line 370.
 (pdftex.def)             Requested size: 483.69687pt x 247.57288pt.
-<Images/Modelisation/MATLAB/MATLAB-frott_charges-comparaison_vitesse.png, id=669, 3170.84625pt x 1604.99625pt>
+<Images/Modelisation/MATLAB/MATLAB-frott_charges-comparaison_vitesse.png, id=719, 3170.84625pt x 1604.99625pt>
 File: Images/Modelisation/MATLAB/MATLAB-frott_charges-comparaison_vitesse.png Graphic file (type png)
 <use Images/Modelisation/MATLAB/MATLAB-frott_charges-comparaison_vitesse.png>
 Package pdftex.def Info: Images/Modelisation/MATLAB/MATLAB-frott_charges-comparaison_vitesse.png  used on input line 376.
 (pdftex.def)             Requested size: 483.69687pt x 244.82892pt.
-<Images/Modelisation/MATLAB/MATLAB-frott_charges-comparaison_plus_précis.png, id=672, 3176.86874pt x 1597.97pt>
+<Images/Modelisation/MATLAB/MATLAB-frott_charges-comparaison_plus_précis.png, id=722, 3176.86874pt x 1597.97pt>
 File: Images/Modelisation/MATLAB/MATLAB-frott_charges-comparaison_plus_précis.png Graphic file (type png)
 <use Images/Modelisation/MATLAB/MATLAB-frott_charges-comparaison_plus_précis.png>
 Package pdftex.def Info: Images/Modelisation/MATLAB/MATLAB-frott_charges-comparaison_plus_précis.png  used on input line 382.
@@ -1373,7 +1406,7 @@ File: Images/Divers/Logo-INSAS.png Graphic file (type png)
 Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 487.
 (pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
  [18]
-<Images/Modelisation/PSIM/hacheur_psim.jpg, id=702, 328.72812pt x 124.96687pt>
+<Images/Modelisation/PSIM/hacheur_psim.jpg, id=752, 328.72812pt x 124.96687pt>
 File: Images/Modelisation/PSIM/hacheur_psim.jpg Graphic file (type jpg)
 <use Images/Modelisation/PSIM/hacheur_psim.jpg>
 Package pdftex.def Info: Images/Modelisation/PSIM/hacheur_psim.jpg  used on input line 494.
@@ -1397,12 +1430,12 @@ File: Images/Divers/Logo-INSAS.png Graphic file (type png)
 Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 513.
 (pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
  [19 <./Images/Modelisation/PSIM/hacheur_psim.jpg>]
-<Images/Modelisation/PSIM/Commande_PSIM.jpg, id=712, 158.09062pt x 169.38281pt>
+<Images/Modelisation/PSIM/Commande_PSIM.jpg, id=762, 158.09062pt x 169.38281pt>
 File: Images/Modelisation/PSIM/Commande_PSIM.jpg Graphic file (type jpg)
 <use Images/Modelisation/PSIM/Commande_PSIM.jpg>
 Package pdftex.def Info: Images/Modelisation/PSIM/Commande_PSIM.jpg  used on input line 526.
 (pdftex.def)             Requested size: 193.47578pt x 207.31094pt.
-<Images/Modelisation/MATLAB/Commande_Matlab.jpg, id=717, 492.33937pt x 193.47281pt>
+<Images/Modelisation/MATLAB/Commande_Matlab.jpg, id=767, 492.33937pt x 193.47281pt>
 File: Images/Modelisation/MATLAB/Commande_Matlab.jpg Graphic file (type jpg)
 <use Images/Modelisation/MATLAB/Commande_Matlab.jpg>
 Package pdftex.def Info: Images/Modelisation/MATLAB/Commande_Matlab.jpg  used on input line 534.
@@ -1416,7 +1449,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 542--544
 
  []
 
-<Images/Modelisation/PSIM/blocs_commande.png, id=726, 446.66875pt x 394.47375pt>
+<Images/Modelisation/PSIM/blocs_commande.png, id=776, 446.66875pt x 394.47375pt>
 File: Images/Modelisation/PSIM/blocs_commande.png Graphic file (type png)
 <use Images/Modelisation/PSIM/blocs_commande.png>
 Package pdftex.def Info: Images/Modelisation/PSIM/blocs_commande.png  used on input line 557.
@@ -1431,17 +1464,17 @@ File: Images/Divers/Logo-INSAS.png Graphic file (type png)
 Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 563.
 (pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
 [21 <./Images/Modelisation/PSIM/blocs_commande.png>]
-<Images/Modelisation/PSIM/courant_IM_comp_hacheur.png, id=737, 1897.0875pt x 846.16125pt>
+<Images/Modelisation/PSIM/courant_IM_comp_hacheur.png, id=787, 1897.0875pt x 846.16125pt>
 File: Images/Modelisation/PSIM/courant_IM_comp_hacheur.png Graphic file (type png)
 <use Images/Modelisation/PSIM/courant_IM_comp_hacheur.png>
 Package pdftex.def Info: Images/Modelisation/PSIM/courant_IM_comp_hacheur.png  used on input line 567.
 (pdftex.def)             Requested size: 483.67854pt x 284.52774pt.
-<Images//Modelisation//PSIM/Vitessse_Hacheur.png, id=740, 1901.1025pt x 927.465pt>
+<Images//Modelisation//PSIM/Vitessse_Hacheur.png, id=790, 1901.1025pt x 927.465pt>
 File: Images//Modelisation//PSIM/Vitessse_Hacheur.png Graphic file (type png)
 <use Images//Modelisation//PSIM/Vitessse_Hacheur.png>
 Package pdftex.def Info: Images//Modelisation//PSIM/Vitessse_Hacheur.png  used on input line 575.
 (pdftex.def)             Requested size: 483.69687pt x 235.96974pt.
-<Images//Modelisation//PSIM/Ondulation_vitesse_hacheur.png, id=743, 1901.1025pt x 927.465pt>
+<Images//Modelisation//PSIM/Ondulation_vitesse_hacheur.png, id=793, 1901.1025pt x 927.465pt>
 File: Images//Modelisation//PSIM/Ondulation_vitesse_hacheur.png Graphic file (type png)
 <use Images//Modelisation//PSIM/Ondulation_vitesse_hacheur.png>
 Package pdftex.def Info: Images//Modelisation//PSIM/Ondulation_vitesse_hacheur.png  used on input line 583.
@@ -1524,12 +1557,12 @@ File: Images/Divers/Logo-INSAS.png Graphic file (type png)
 Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 636.
 (pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
 [24]
-<Images//Modelisation//MATLAB/comparaison_courant_simulink.png, id=767, 1417.295pt x 666.49pt>
+<Images//Modelisation//MATLAB/comparaison_courant_simulink.png, id=817, 1417.295pt x 666.49pt>
 File: Images//Modelisation//MATLAB/comparaison_courant_simulink.png Graphic file (type png)
 <use Images//Modelisation//MATLAB/comparaison_courant_simulink.png>
 Package pdftex.def Info: Images//Modelisation//MATLAB/comparaison_courant_simulink.png  used on input line 655.
 (pdftex.def)             Requested size: 483.69687pt x 227.45786pt.
-<Images//Modelisation//MATLAB/Comparaison_scope_courant.png, id=771, 1580.90625pt x 895.345pt>
+<Images//Modelisation//MATLAB/Comparaison_scope_courant.png, id=821, 1580.90625pt x 895.345pt>
 File: Images//Modelisation//MATLAB/Comparaison_scope_courant.png Graphic file (type png)
 <use Images//Modelisation//MATLAB/Comparaison_scope_courant.png>
 Package pdftex.def Info: Images//Modelisation//MATLAB/Comparaison_scope_courant.png  used on input line 663.
@@ -1539,17 +1572,17 @@ File: Images/Divers/Logo-INSAS.png Graphic file (type png)
 Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 669.
 (pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
  [25 <./Images//Modelisation//MATLAB/comparaison_courant_simulink.png> <./Images//Modelisation//MATLAB/Comparaison_scope_courant.png>]
-<Images//Modelisation//MATLAB/schema_asser_courant.png, id=781, 998.73125pt x 232.87pt>
+<Images//Modelisation//MATLAB/schema_asser_courant.png, id=831, 998.73125pt x 232.87pt>
 File: Images//Modelisation//MATLAB/schema_asser_courant.png Graphic file (type png)
 <use Images//Modelisation//MATLAB/schema_asser_courant.png>
 Package pdftex.def Info: Images//Modelisation//MATLAB/schema_asser_courant.png  used on input line 676.
 (pdftex.def)             Requested size: 386.95897pt x 90.22552pt.
-<Images//Modelisation//MATLAB/asserv_courant.png, id=784, 1926.19624pt x 895.345pt>
+<Images//Modelisation//MATLAB/asserv_courant.png, id=834, 1926.19624pt x 895.345pt>
 File: Images//Modelisation//MATLAB/asserv_courant.png Graphic file (type png)
 <use Images//Modelisation//MATLAB/asserv_courant.png>
 Package pdftex.def Info: Images//Modelisation//MATLAB/asserv_courant.png  used on input line 694.
 (pdftex.def)             Requested size: 483.69687pt x 224.83301pt.
-<Images//Modelisation//PSIM/Correcteur_PSIM_Ass.png, id=787, 1234.6125pt x 738.76pt>
+<Images//Modelisation//PSIM/Correcteur_PSIM_Ass.png, id=837, 1234.6125pt x 738.76pt>
 File: Images//Modelisation//PSIM/Correcteur_PSIM_Ass.png Graphic file (type png)
 <use Images//Modelisation//PSIM/Correcteur_PSIM_Ass.png>
 Package pdftex.def Info: Images//Modelisation//PSIM/Correcteur_PSIM_Ass.png  used on input line 706.
@@ -1559,7 +1592,7 @@ File: Images/Divers/Logo-INSAS.png Graphic file (type png)
 Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 709.
 (pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
  [26 <./Images//Modelisation//MATLAB/schema_asser_courant.png> <./Images//Modelisation//MATLAB/asserv_courant.png>]
-<Images/Modelisation/PSIM/reponse_psim_ass_i.png, id=796, 1892.06876pt x 887.315pt>
+<Images/Modelisation/PSIM/reponse_psim_ass_i.png, id=846, 1892.06876pt x 887.315pt>
 File: Images/Modelisation/PSIM/reponse_psim_ass_i.png Graphic file (type png)
 <use Images/Modelisation/PSIM/reponse_psim_ass_i.png>
 Package pdftex.def Info: Images/Modelisation/PSIM/reponse_psim_ass_i.png  used on input line 713.
@@ -1583,7 +1616,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 725--730
 
  []
 
-<Images//Modelisation//MATLAB/Asservissemrnt vitesse 8e ordre comparaison.png, id=806, 1155.1155pt x 560.69475pt>
+<Images//Modelisation//MATLAB/Asservissemrnt vitesse 8e ordre comparaison.png, id=856, 1155.1155pt x 560.69475pt>
 File: Images//Modelisation//MATLAB/Asservissemrnt vitesse 8e ordre comparaison.png Graphic file (type png)
 <use Images//Modelisation//MATLAB/Asservissemrnt vitesse 8e ordre comparaison.png>
 Package pdftex.def Info: Images//Modelisation//MATLAB/Asservissemrnt vitesse 8e ordre comparaison.png  used on input line 737.
@@ -1612,7 +1645,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 754--761
 
  []
 
-<Images//Modelisation//MATLAB/Comparaison 3 courbes vitesse matlab.png, id=814, 1154.51324pt x 555.87675pt>
+<Images//Modelisation//MATLAB/Comparaison 3 courbes vitesse matlab.png, id=864, 1154.51324pt x 555.87675pt>
 File: Images//Modelisation//MATLAB/Comparaison 3 courbes vitesse matlab.png Graphic file (type png)
 <use Images//Modelisation//MATLAB/Comparaison 3 courbes vitesse matlab.png>
 Package pdftex.def Info: Images//Modelisation//MATLAB/Comparaison 3 courbes vitesse matlab.png  used on input line 772.
@@ -1641,7 +1674,7 @@ File: Images/Divers/Logo-INSAS.png Graphic file (type png)
 Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 818.
 (pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
 [30]
-<Images//Modelisation//MATLAB/Asservissement vitesse PI Matlab.png, id=830, 720.89325pt x 227.6505pt>
+<Images//Modelisation//MATLAB/Asservissement vitesse PI Matlab.png, id=880, 720.89325pt x 227.6505pt>
 File: Images//Modelisation//MATLAB/Asservissement vitesse PI Matlab.png Graphic file (type png)
 <use Images//Modelisation//MATLAB/Asservissement vitesse PI Matlab.png>
 Package pdftex.def Info: Images//Modelisation//MATLAB/Asservissement vitesse PI Matlab.png  used on input line 824.
@@ -1651,7 +1684,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 829--833
 
  []
 
-<Images//Modelisation//MATLAB/Vitesse_Asservie Graph Matlab PI calculé.png, id=831, 1154.51324pt x 558.28575pt>
+<Images//Modelisation//MATLAB/Vitesse_Asservie Graph Matlab PI calculé.png, id=881, 1154.51324pt x 558.28575pt>
 File: Images//Modelisation//MATLAB/Vitesse_Asservie Graph Matlab PI calculé.png Graphic file (type png)
 <use Images//Modelisation//MATLAB/Vitesse_Asservie Graph Matlab PI calculé.png>
 Package pdftex.def Info: Images//Modelisation//MATLAB/Vitesse_Asservie Graph Matlab PI calculé.png  used on input line 836.
@@ -1666,7 +1699,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 844--849
 
  []
 
-<Images//Modelisation//PSIM/corr_vitesse_glob_psim.png, id=834, 1219.55624pt x 692.5875pt>
+<Images//Modelisation//PSIM/corr_vitesse_glob_psim.png, id=884, 1219.55624pt x 692.5875pt>
 File: Images//Modelisation//PSIM/corr_vitesse_glob_psim.png Graphic file (type png)
 <use Images//Modelisation//PSIM/corr_vitesse_glob_psim.png>
 Package pdftex.def Info: Images//Modelisation//PSIM/corr_vitesse_glob_psim.png  used on input line 856.
@@ -1681,7 +1714,7 @@ File: Images/Divers/Logo-INSAS.png Graphic file (type png)
 Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 859.
 (pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
 [31 <./Images//Modelisation//MATLAB/Asservissement vitesse PI Matlab.png> <./Images//Modelisation//MATLAB/Vitesse_Asservie Graph Matlab PI calculé.png>]
-<Images//Modelisation//PSIM/courbe_vitesse_corrige_psim.png, id=843, 1892.06876pt x 887.315pt>
+<Images//Modelisation//PSIM/courbe_vitesse_corrige_psim.png, id=893, 1892.06876pt x 887.315pt>
 File: Images//Modelisation//PSIM/courbe_vitesse_corrige_psim.png Graphic file (type png)
 <use Images//Modelisation//PSIM/courbe_vitesse_corrige_psim.png>
 Package pdftex.def Info: Images//Modelisation//PSIM/courbe_vitesse_corrige_psim.png  used on input line 863.
@@ -1700,12 +1733,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-<Images/Modelisation/MATLAB/NV_Gain_Matlab.jpg, id=853, 595.22375pt x 242.40562pt>
+<Images/Modelisation/MATLAB/NV_Gain_Matlab.jpg, id=903, 595.22375pt x 242.40562pt>
 File: Images/Modelisation/MATLAB/NV_Gain_Matlab.jpg Graphic file (type jpg)
 <use Images/Modelisation/MATLAB/NV_Gain_Matlab.jpg>
 Package pdftex.def Info: Images/Modelisation/MATLAB/NV_Gain_Matlab.jpg  used on input line 10.
 (pdftex.def)             Requested size: 256.0748pt x 104.28415pt.
-<Images/Modelisation/PSIM/NV_Gain_PSIM.jpg, id=854, 346.29375pt x 268.00125pt>
+<Images/Modelisation/PSIM/NV_Gain_PSIM.jpg, id=904, 346.29375pt x 268.00125pt>
 File: Images/Modelisation/PSIM/NV_Gain_PSIM.jpg Graphic file (type jpg)
 <use Images/Modelisation/PSIM/NV_Gain_PSIM.jpg>
 Package pdftex.def Info: Images/Modelisation/PSIM/NV_Gain_PSIM.jpg  used on input line 12.
@@ -1720,17 +1753,17 @@ File: Images/Divers/Logo-INSAS.png Graphic file (type png)
 Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 19.
 (pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
 [33 <./Images/Modelisation/MATLAB/NV_Gain_Matlab.jpg> <./Images/Modelisation/PSIM/NV_Gain_PSIM.jpg>]
-<Images//Modelisation/MATLAB/Matlab_complet.jpg, id=863, 647.92062pt x 355.3275pt>
+<Images//Modelisation/MATLAB/Matlab_complet.jpg, id=913, 647.92062pt x 355.3275pt>
 File: Images//Modelisation/MATLAB/Matlab_complet.jpg Graphic file (type jpg)
 <use Images//Modelisation/MATLAB/Matlab_complet.jpg>
 Package pdftex.def Info: Images//Modelisation/MATLAB/Matlab_complet.jpg  used on input line 23.
 (pdftex.def)             Requested size: 483.69687pt x 265.2696pt.
-<Images/Modelisation/MATLAB/Comp_syst_complet_asservi_vitesse.png, id=866, 632.3625pt x 474.27188pt>
+<Images/Modelisation/MATLAB/Comp_syst_complet_asservi_vitesse.png, id=916, 632.3625pt x 474.27188pt>
 File: Images/Modelisation/MATLAB/Comp_syst_complet_asservi_vitesse.png Graphic file (type png)
 <use Images/Modelisation/MATLAB/Comp_syst_complet_asservi_vitesse.png>
 Package pdftex.def Info: Images/Modelisation/MATLAB/Comp_syst_complet_asservi_vitesse.png  used on input line 34.
 (pdftex.def)             Requested size: 338.58632pt x 253.94643pt.
-<Images/Modelisation/MATLAB/Comp_syst_complet_asservi_courant.png, id=869, 632.3625pt x 474.27188pt>
+<Images/Modelisation/MATLAB/Comp_syst_complet_asservi_courant.png, id=919, 632.3625pt x 474.27188pt>
 File: Images/Modelisation/MATLAB/Comp_syst_complet_asservi_courant.png Graphic file (type png)
 <use Images/Modelisation/MATLAB/Comp_syst_complet_asservi_courant.png>
 Package pdftex.def Info: Images/Modelisation/MATLAB/Comp_syst_complet_asservi_courant.png  used on input line 41.
@@ -1908,7 +1941,7 @@ File: Images/Divers/Logo-INSAS.png Graphic file (type png)
 Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 205.
 (pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
 [40]
-<Images/Modelisation/PSIM/NE555.jpg, id=907, 259.46938pt x 334.75063pt>
+<Images/Modelisation/PSIM/NE555.jpg, id=957, 259.46938pt x 334.75063pt>
 File: Images/Modelisation/PSIM/NE555.jpg Graphic file (type jpg)
 <use Images/Modelisation/PSIM/NE555.jpg>
 Package pdftex.def Info: Images/Modelisation/PSIM/NE555.jpg  used on input line 219.
@@ -1923,7 +1956,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 211--222
 
  []
 
-<Images/Modelisation/PSIM/NE55_Ass.png, id=908, 1171.37625pt x 322.20375pt>
+<Images/Modelisation/PSIM/NE55_Ass.png, id=958, 1171.37625pt x 322.20375pt>
 File: Images/Modelisation/PSIM/NE55_Ass.png Graphic file (type png)
 <use Images/Modelisation/PSIM/NE55_Ass.png>
 Package pdftex.def Info: Images/Modelisation/PSIM/NE55_Ass.png  used on input line 227.
@@ -1962,7 +1995,7 @@ File: Images/Divers/Logo-INSAS.png Graphic file (type png)
 Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 242.
 (pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
 [42 <./Images/Modelisation/PSIM/NE55_Ass.png>]
-<Images/Modelisation/PSIM/Circuit_codeur_pinal.png, id=919, 1294.8375pt x 612.2875pt>
+<Images/Modelisation/PSIM/Circuit_codeur_pinal.png, id=969, 1294.8375pt x 612.2875pt>
 File: Images/Modelisation/PSIM/Circuit_codeur_pinal.png Graphic file (type png)
 <use Images/Modelisation/PSIM/Circuit_codeur_pinal.png>
 Package pdftex.def Info: Images/Modelisation/PSIM/Circuit_codeur_pinal.png  used on input line 246.
@@ -1973,7 +2006,7 @@ File: Images/Divers/Logo-INSAS.png Graphic file (type png)
 Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 264.
 (pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
  [43 <./Images/Modelisation/PSIM/Circuit_codeur_pinal.png>] (CircuitTikz/bascule_d.tex)
-<Images/Modelisation/PSIM/schm_reel_1.png, id=925, 1015.795pt x 353.32pt>
+<Images/Modelisation/PSIM/schm_reel_1.png, id=975, 1015.795pt x 353.32pt>
 File: Images/Modelisation/PSIM/schm_reel_1.png Graphic file (type png)
 <use Images/Modelisation/PSIM/schm_reel_1.png>
 Package pdftex.def Info: Images/Modelisation/PSIM/schm_reel_1.png  used on input line 357.
@@ -1983,7 +2016,7 @@ File: Images/Divers/Logo-INSAS.png Graphic file (type png)
 Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 360.
 (pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
  [44]
-<Images/Modelisation/PSIM/schm_reel_2.png, id=933, 723.70375pt x 496.85625pt>
+<Images/Modelisation/PSIM/schm_reel_2.png, id=983, 723.70375pt x 496.85625pt>
 File: Images/Modelisation/PSIM/schm_reel_2.png Graphic file (type png)
 <use Images/Modelisation/PSIM/schm_reel_2.png>
 Package pdftex.def Info: Images/Modelisation/PSIM/schm_reel_2.png  used on input line 365.
@@ -1993,17 +2026,17 @@ File: Images/Divers/Logo-INSAS.png Graphic file (type png)
 Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 370.
 (pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
  [45 <./Images/Modelisation/PSIM/schm_reel_1.png> <./Images/Modelisation/PSIM/schm_reel_2.png>]
-<Images/Modelisation/PSIM/tacchy_reel_plus.png, id=940, 1577.895pt x 523.9575pt>
+<Images/Modelisation/PSIM/tacchy_reel_plus.png, id=990, 1577.895pt x 523.9575pt>
 File: Images/Modelisation/PSIM/tacchy_reel_plus.png Graphic file (type png)
 <use Images/Modelisation/PSIM/tacchy_reel_plus.png>
 Package pdftex.def Info: Images/Modelisation/PSIM/tacchy_reel_plus.png  used on input line 374.
 (pdftex.def)             Requested size: 483.69687pt x 160.61829pt.
-<Images/Modelisation/PSIM/tachy_reel_moins.png, id=941, 1577.895pt x 523.9575pt>
+<Images/Modelisation/PSIM/tachy_reel_moins.png, id=991, 1577.895pt x 523.9575pt>
 File: Images/Modelisation/PSIM/tachy_reel_moins.png Graphic file (type png)
 <use Images/Modelisation/PSIM/tachy_reel_moins.png>
 Package pdftex.def Info: Images/Modelisation/PSIM/tachy_reel_moins.png  used on input line 380.
 (pdftex.def)             Requested size: 483.69687pt x 160.61829pt.
-<Images/Modelisation/PSIM/Codeur_simu_reel_plus.png, id=942, 1577.895pt x 523.9575pt>
+<Images/Modelisation/PSIM/Codeur_simu_reel_plus.png, id=992, 1577.895pt x 523.9575pt>
 File: Images/Modelisation/PSIM/Codeur_simu_reel_plus.png Graphic file (type png)
 <use Images/Modelisation/PSIM/Codeur_simu_reel_plus.png>
 Package pdftex.def Info: Images/Modelisation/PSIM/Codeur_simu_reel_plus.png  used on input line 386.
@@ -2013,7 +2046,7 @@ Overfull \hbox (48.37263pt too wide) in paragraph at lines 386--387
  [][] 
  []
 
-<Images/Modelisation/PSIM/codeur_reel_moins.png, id=943, 1577.895pt x 523.9575pt>
+<Images/Modelisation/PSIM/codeur_reel_moins.png, id=993, 1577.895pt x 523.9575pt>
 File: Images/Modelisation/PSIM/codeur_reel_moins.png Graphic file (type png)
 <use Images/Modelisation/PSIM/codeur_reel_moins.png>
 Package pdftex.def Info: Images/Modelisation/PSIM/codeur_reel_moins.png  used on input line 392.
@@ -2037,7 +2070,7 @@ File: Images/Divers/Logo-INSAS.png Graphic file (type png)
 Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 406.
 (pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
 [47 <./Images/Modelisation/PSIM/codeur_reel_moins.png>]
-<Images/photo_pcb/Alims et entrées.png, id=956, 479.7925pt x 744.7825pt>
+<Images/photo_pcb/Alims et entrées.png, id=1006, 479.7925pt x 744.7825pt>
 File: Images/photo_pcb/Alims et entrées.png Graphic file (type png)
 <use Images/photo_pcb/Alims et entrées.png>
 Package pdftex.def Info: Images/photo_pcb/Alims et entrées.png  used on input line 410.
@@ -2052,7 +2085,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 414--421
 
  []
 
-<Images/photo_pcb/Première boucle proteus.png, id=957, 1126.2075pt x 342.27875pt>
+<Images/photo_pcb/Première boucle proteus.png, id=1007, 1126.2075pt x 342.27875pt>
 File: Images/photo_pcb/Première boucle proteus.png Graphic file (type png)
 <use Images/photo_pcb/Première boucle proteus.png>
 Package pdftex.def Info: Images/photo_pcb/Première boucle proteus.png  used on input line 424.
@@ -2062,17 +2095,17 @@ File: Images/Divers/Logo-INSAS.png Graphic file (type png)
 Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 428.
 (pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
 [48 <./Images/photo_pcb/Alims et entrées.png (PNG copy)> <./Images/photo_pcb/Première boucle proteus.png (PNG copy)>]
-<Images/photo_pcb/Deuxième partie de la chaine.png, id=963, 567.92175pt x 195.73125pt>
+<Images/photo_pcb/Deuxième partie de la chaine.png, id=1013, 567.92175pt x 195.73125pt>
 File: Images/photo_pcb/Deuxième partie de la chaine.png Graphic file (type png)
 <use Images/photo_pcb/Deuxième partie de la chaine.png>
 Package pdftex.def Info: Images/photo_pcb/Deuxième partie de la chaine.png  used on input line 440.
 (pdftex.def)             Requested size: 483.69687pt x 166.70683pt.
-<Images/photo_pcb/chaine complete.png, id=964, 669.09975pt x 427.5975pt>
+<Images/photo_pcb/chaine complete.png, id=1014, 669.09975pt x 427.5975pt>
 File: Images/photo_pcb/chaine complete.png Graphic file (type png)
 <use Images/photo_pcb/chaine complete.png>
 Package pdftex.def Info: Images/photo_pcb/chaine complete.png  used on input line 456.
 (pdftex.def)             Requested size: 483.69687pt x 309.10963pt.
-<Images/photo_pcb/Comparateur.png, id=965, 372.39125pt x 336.25626pt>
+<Images/photo_pcb/Comparateur.png, id=1015, 372.39125pt x 336.25626pt>
 File: Images/photo_pcb/Comparateur.png Graphic file (type png)
 <use Images/photo_pcb/Comparateur.png>
 Package pdftex.def Info: Images/photo_pcb/Comparateur.png  used on input line 470.
@@ -2096,7 +2129,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 474--480
 
  []
 
-<Images/photo_pcb/PdT.png, id=972, 1205.50375pt x 511.9125pt>
+<Images/photo_pcb/PdT.png, id=1022, 1205.50375pt x 511.9125pt>
 File: Images/photo_pcb/PdT.png Graphic file (type png)
 <use Images/photo_pcb/PdT.png>
 Package pdftex.def Info: Images/photo_pcb/PdT.png  used on input line 483.
@@ -2111,12 +2144,12 @@ File: Images/Divers/Logo-INSAS.png Graphic file (type png)
 Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 492.
 (pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
 [50 <./Images/photo_pcb/Comparateur.png (PNG copy)> <./Images/photo_pcb/PdT.png (PNG copy)>]
-<Images/photo_pcb/Circuit codeur.png, id=977, 990.70125pt x 338.26375pt>
+<Images/photo_pcb/Circuit codeur.png, id=1027, 990.70125pt x 338.26375pt>
 File: Images/photo_pcb/Circuit codeur.png Graphic file (type png)
 <use Images/photo_pcb/Circuit codeur.png>
 Package pdftex.def Info: Images/photo_pcb/Circuit codeur.png  used on input line 495.
 (pdftex.def)             Requested size: 483.69687pt x 165.15195pt.
-<Images/photo_pcb/Bascule.png, id=978, 908.39375pt x 406.51875pt>
+<Images/photo_pcb/Bascule.png, id=1028, 908.39375pt x 406.51875pt>
 File: Images/photo_pcb/Bascule.png Graphic file (type png)
 <use Images/photo_pcb/Bascule.png>
 Package pdftex.def Info: Images/photo_pcb/Bascule.png  used on input line 504.
@@ -2126,12 +2159,12 @@ File: Images/Divers/Logo-INSAS.png Graphic file (type png)
 Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 509.
 (pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
  [51 <./Images/photo_pcb/Circuit codeur.png (PNG copy)> <./Images/photo_pcb/Bascule.png (PNG copy)>]
-<Images/photo_pcb/Multiplexeur.png, id=983, 358.33875pt x 245.718pt>
+<Images/photo_pcb/Multiplexeur.png, id=1033, 358.33875pt x 245.718pt>
 File: Images/photo_pcb/Multiplexeur.png Graphic file (type png)
 <use Images/photo_pcb/Multiplexeur.png>
 Package pdftex.def Info: Images/photo_pcb/Multiplexeur.png  used on input line 513.
 (pdftex.def)             Requested size: 386.95897pt x 265.36023pt.
-<Images/photo_pcb/Chaine complete codeur.png, id=984, 1207.51125pt x 411.5375pt>
+<Images/photo_pcb/Chaine complete codeur.png, id=1034, 1207.51125pt x 411.5375pt>
 File: Images/photo_pcb/Chaine complete codeur.png Graphic file (type png)
 <use Images/photo_pcb/Chaine complete codeur.png>
 Package pdftex.def Info: Images/photo_pcb/Chaine complete codeur.png  used on input line 523.
@@ -2146,7 +2179,7 @@ File: Images/Divers/Logo-INSAS.png Graphic file (type png)
 Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 527.
 (pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
 [52 <./Images/photo_pcb/Multiplexeur.png> <./Images/photo_pcb/Chaine complete codeur.png (PNG copy)>]
-<Images/photo_pcb/tachy div.png, id=990, 1043.9pt x 587.19376pt>
+<Images/photo_pcb/tachy div.png, id=1040, 1043.9pt x 587.19376pt>
 File: Images/photo_pcb/tachy div.png Graphic file (type png)
 <use Images/photo_pcb/tachy div.png>
 Package pdftex.def Info: Images/photo_pcb/tachy div.png  used on input line 531.
@@ -2195,17 +2228,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 575--577
 
  []
 
-<Images/photo_pcb/PCB_final.png, id=995, 809.0225pt x 599.23875pt>
+<Images/photo_pcb/PCB_final.png, id=1045, 809.0225pt x 599.23875pt>
 File: Images/photo_pcb/PCB_final.png Graphic file (type png)
 <use Images/photo_pcb/PCB_final.png>
 Package pdftex.def Info: Images/photo_pcb/PCB_final.png  used on input line 582.
 (pdftex.def)             Requested size: 483.69687pt x 358.27505pt.
-<Images/photo_pcb/CMS_prot.png, id=996, 603.4545pt x 466.1415pt>
+<Images/photo_pcb/CMS_prot.png, id=1046, 603.4545pt x 466.1415pt>
 File: Images/photo_pcb/CMS_prot.png Graphic file (type png)
 <use Images/photo_pcb/CMS_prot.png>
 Package pdftex.def Info: Images/photo_pcb/CMS_prot.png  used on input line 598.
 (pdftex.def)             Requested size: 232.17242pt x 179.34055pt.
-<Images/photo_pcb/CMS_réel.jpg, id=997, 1859.94875pt x 1574.88374pt>
+<Images/photo_pcb/CMS_réel.jpg, id=1047, 1859.94875pt x 1574.88374pt>
 File: Images/photo_pcb/CMS_réel.jpg Graphic file (type jpg)
 <use Images/photo_pcb/CMS_réel.jpg>
 Package pdftex.def Info: Images/photo_pcb/CMS_réel.jpg  used on input line 605.
@@ -2230,17 +2263,17 @@ File: Images/Divers/Logo-INSAS.png Graphic file (type png)
 Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 611.
 (pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
  [55 <./Images/photo_pcb/CMS_prot.png> <./Images/photo_pcb/CMS_réel.jpg>]
-<Images/photo_pcb/VGA_Prot.png, id=1008, 501.072pt x 405.9165pt>
+<Images/photo_pcb/VGA_Prot.png, id=1058, 501.072pt x 405.9165pt>
 File: Images/photo_pcb/VGA_Prot.png Graphic file (type png)
 <use Images/photo_pcb/VGA_Prot.png>
 Package pdftex.def Info: Images/photo_pcb/VGA_Prot.png  used on input line 617.
 (pdftex.def)             Requested size: 232.17242pt x 188.08029pt.
-<Images/photo_pcb/VGA_réel.jpg, id=1009, 1912.14375pt x 2052.66875pt>
+<Images/photo_pcb/VGA_réel.jpg, id=1059, 1912.14375pt x 2052.66875pt>
 File: Images/photo_pcb/VGA_réel.jpg Graphic file (type jpg)
 <use Images/photo_pcb/VGA_réel.jpg>
 Package pdftex.def Info: Images/photo_pcb/VGA_réel.jpg  used on input line 624.
 (pdftex.def)             Requested size: 232.17242pt x 249.22249pt.
-<Images/photo_pcb/routage_vga.png, id=1010, 818.05624pt x 434.62375pt>
+<Images/photo_pcb/routage_vga.png, id=1060, 818.05624pt x 434.62375pt>
 File: Images/photo_pcb/routage_vga.png Graphic file (type png)
 <use Images/photo_pcb/routage_vga.png>
 Package pdftex.def Info: Images/photo_pcb/routage_vga.png  used on input line 633.
@@ -2274,12 +2307,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 653--657
 
  []
 
-<Images/photo_pcb/face cms.png, id=1017, 686.565pt x 939.51pt>
+<Images/photo_pcb/face cms.png, id=1067, 686.565pt x 939.51pt>
 File: Images/photo_pcb/face cms.png Graphic file (type png)
 <use Images/photo_pcb/face cms.png>
 Package pdftex.def Info: Images/photo_pcb/face cms.png  used on input line 667.
 (pdftex.def)             Requested size: 232.17242pt x 317.70888pt.
-<Images/photo_pcb/face traversants.png, id=1018, 717.68124pt x 978.65625pt>
+<Images/photo_pcb/face traversants.png, id=1068, 717.68124pt x 978.65625pt>
 File: Images/photo_pcb/face traversants.png Graphic file (type png)
 <use Images/photo_pcb/face traversants.png>
 Package pdftex.def Info: Images/photo_pcb/face traversants.png  used on input line 674.
@@ -2289,7 +2322,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 658--679
 
  []
 
-<Images/Modelisation/PSIM/Test_preli.jpg, id=1019, 655.44875pt x 254.45062pt>
+<Images/Modelisation/PSIM/Test_preli.jpg, id=1069, 655.44875pt x 254.45062pt>
 File: Images/Modelisation/PSIM/Test_preli.jpg Graphic file (type jpg)
 <use Images/Modelisation/PSIM/Test_preli.jpg>
 Package pdftex.def Info: Images/Modelisation/PSIM/Test_preli.jpg  used on input line 693.
@@ -2318,12 +2351,139 @@ Underfull \hbox (badness 10000) in paragraph at lines 697--716
 
  []
 
+File: Images/Divers/Logo-INSAS.png Graphic file (type png)
+<use Images/Divers/Logo-INSAS.png>
+Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 716.
+(pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
+[58 <./Images/Modelisation/PSIM/Test_preli.jpg>]
+<Images/oscillo/courantcodeur.png, id=1078, 803.0pt x 513.92pt>
+File: Images/oscillo/courantcodeur.png Graphic file (type png)
+<use Images/oscillo/courantcodeur.png>
+Package pdftex.def Info: Images/oscillo/courantcodeur.png  used on input line 727.
+(pdftex.def)             Requested size: 483.69687pt x 309.56984pt.
+File: Images/Divers/Logo-INSAS.png Graphic file (type png)
+<use Images/Divers/Logo-INSAS.png>
+Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 732.
+(pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
+ [59 <./Images/oscillo/courantcodeur.png (PNG copy)>]
+<Images/oscillo/depa vitesse.png, id=1083, 803.0pt x 513.92pt>
+File: Images/oscillo/depa vitesse.png Graphic file (type png)
+<use Images/oscillo/depa vitesse.png>
+Package pdftex.def Info: Images/oscillo/depa vitesse.png  used on input line 735.
+(pdftex.def)             Requested size: 435.32422pt x 278.6105pt.
+<Images/oscillo/vitesse tr5.png, id=1084, 803.0pt x 513.92pt>
+File: Images/oscillo/vitesse tr5.png Graphic file (type png)
+<use Images/oscillo/vitesse tr5.png>
+Package pdftex.def Info: Images/oscillo/vitesse tr5.png  used on input line 740.
+(pdftex.def)             Requested size: 435.32422pt x 278.6105pt.
+File: Images/Divers/Logo-INSAS.png Graphic file (type png)
+<use Images/Divers/Logo-INSAS.png>
+Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 744.
+(pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
+ [60 <./Images/oscillo/depa vitesse.png (PNG copy)> <./Images/oscillo/vitesse tr5.png (PNG copy)>]
+<Images/oscillo/vitesse_codeur_avant_correction.png, id=1090, 803.0pt x 513.92pt>
+File: Images/oscillo/vitesse_codeur_avant_correction.png Graphic file (type png)
+<use Images/oscillo/vitesse_codeur_avant_correction.png>
+Package pdftex.def Info: Images/oscillo/vitesse_codeur_avant_correction.png  used on input line 747.
+(pdftex.def)             Requested size: 483.69687pt x 309.56984pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 752--762
+
+ []
+
+File: Images/Divers/Logo-INSAS.png Graphic file (type png)
+<use Images/Divers/Logo-INSAS.png>
+Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 762.
+(pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
+[61 <./Images/oscillo/vitesse_codeur_avant_correction.png (PNG copy)>]
+<Images/oscillo/codeur_corrige.png, id=1095, 803.0pt x 513.92pt>
+File: Images/oscillo/codeur_corrige.png Graphic file (type png)
+<use Images/oscillo/codeur_corrige.png>
+Package pdftex.def Info: Images/oscillo/codeur_corrige.png  used on input line 765.
+(pdftex.def)             Requested size: 483.69687pt x 309.56984pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 769--770
+
+ []
+
+<Images/Modelisation/MATLAB/Tachy.png, id=1096, 1445.4pt x 755.07094pt>
+File: Images/Modelisation/MATLAB/Tachy.png Graphic file (type png)
+<use Images/Modelisation/MATLAB/Tachy.png>
+Package pdftex.def Info: Images/Modelisation/MATLAB/Tachy.png  used on input line 773.
+(pdftex.def)             Requested size: 386.95897pt x 202.14366pt.
+<Images/Modelisation/MATLAB/Codeur_corrige.png, id=1097, 1445.4pt x 755.07094pt>
+File: Images/Modelisation/MATLAB/Codeur_corrige.png Graphic file (type png)
+<use Images/Modelisation/MATLAB/Codeur_corrige.png>
+Package pdftex.def Info: Images/Modelisation/MATLAB/Codeur_corrige.png  used on input line 778.
+(pdftex.def)             Requested size: 483.69687pt x 252.6767pt.
+File: Images/Divers/Logo-INSAS.png Graphic file (type png)
+<use Images/Divers/Logo-INSAS.png>
+Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 782.
+(pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
+[62 <./Images/oscillo/codeur_corrige.png (PNG copy)> <./Images/Modelisation/MATLAB/Tachy.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 782--785
+
+ []
+
+File: Images/Divers/Logo-INSAS.png Graphic file (type png)
+<use Images/Divers/Logo-INSAS.png>
+Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 791.
+(pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
+[63 <./Images/Modelisation/MATLAB/Codeur_corrige.png (PNG copy)>]
+<Images/photo_pcb/boite_modelisation2.png, id=1106, 460.119pt x 457.71pt>
+File: Images/photo_pcb/boite_modelisation2.png Graphic file (type png)
+<use Images/photo_pcb/boite_modelisation2.png>
+Package pdftex.def Info: Images/photo_pcb/boite_modelisation2.png  used on input line 801.
+(pdftex.def)             Requested size: 232.17242pt x 230.95665pt.
+<Images/photo_pcb/boite_réelle.jpg, id=1107, 1827.82875pt x 1951.29pt>
+File: Images/photo_pcb/boite_réelle.jpg Graphic file (type jpg)
+<use Images/photo_pcb/boite_réelle.jpg>
+Package pdftex.def Info: Images/photo_pcb/boite_réelle.jpg  used on input line 808.
+(pdftex.def)             Requested size: 232.17242pt x 247.84085pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 792--813
+
+ []
+
+File: Images/Divers/Logo-INSAS.png Graphic file (type png)
+<use Images/Divers/Logo-INSAS.png>
+Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 817.
+(pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
+[64 <./Images/photo_pcb/boite_modelisation2.png> <./Images/photo_pcb/boite_réelle.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 818--820
+
+ []
+
+<Images/photo_pcb/Intégration du pcb.jpg, id=1113, 2095.83pt x 4657.4pt>
+File: Images/photo_pcb/Intégration du pcb.jpg Graphic file (type jpg)
+<use Images/photo_pcb/Intégration du pcb.jpg>
+Package pdftex.def Info: Images/photo_pcb/Intégration du pcb.jpg  used on input line 826.
+(pdftex.def)             Requested size: 232.17242pt x 515.93996pt.
+<Images/photo_pcb/pcb dans boite exterieur.jpg, id=1114, 2095.83pt x 2113.8975pt>
+File: Images/photo_pcb/pcb dans boite exterieur.jpg Graphic file (type jpg)
+<use Images/photo_pcb/pcb dans boite exterieur.jpg>
+Package pdftex.def Info: Images/photo_pcb/pcb dans boite exterieur.jpg  used on input line 833.
+(pdftex.def)             Requested size: 232.17242pt x 234.17447pt.
+File: Images/Divers/Logo-INSAS.png Graphic file (type png)
+<use Images/Divers/Logo-INSAS.png>
+Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 839.
+(pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
+[65 <./Images/photo_pcb/Intégration du pcb.jpg> <./Images/photo_pcb/pcb dans boite exterieur.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 850--854
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 850--854
+
+ []
+
 ) (Parties/arb_fig.tex
 File: Images/Divers/Logo-INSAS.png Graphic file (type png)
 <use Images/Divers/Logo-INSAS.png>
 Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 1.
 (pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
- [58 <./Images/Modelisation/PSIM/Test_preli.jpg>]
+ [66]
 Overfull \hbox (10.47122pt too wide) in paragraph at lines 13--14
 []\T1/lmr/m/n/10 Figure ([][]6[][]) :[][]/Mo-de-li-sa-tion et si-mu-la-tion du sys-teme en boucle ou-ver-te/P-SIM/-Mo-teur_a_vide_PSIM.psimsch[][] 
  []
@@ -2373,7 +2533,7 @@ File: Images/Divers/Logo-INSAS.png Graphic file (type png)
 <use Images/Divers/Logo-INSAS.png>
 Package pdftex.def Info: Images/Divers/Logo-INSAS.png  used on input line 29.
 (pdftex.def)             Requested size: 102.38113pt x 22.13991pt.
- [59] (main.aux)
+ [67] (main.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -2383,20 +2543,20 @@ L3 programming layer <2023-08-29>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3D94BD8D1F8B60CB88C461D9C82C62DB;12882.
+(rerunfilecheck)             Checksum: AAAA0815555F4DEF6CEAF025E5E2B288;13755.
  ) 
 Here is how much of TeX's memory you used:
- 66615 strings out of 475247
- 1727884 string characters out of 5757792
- 2364656 words of memory out of 5000000
- 87058 multiletter control sequences out of 15000+600000
+ 66722 strings out of 475247
+ 1731728 string characters out of 5757792
+ 2365044 words of memory out of 5000000
+ 87142 multiletter control sequences out of 15000+600000
  673427 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  104i,16n,106p,1015b,1318s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbsy10.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy9.pfb><C:/Users/cidmo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (60 pages, 7303554 bytes).
+Output written on main.pdf (68 pages, 13956453 bytes).
 PDF statistics:
- 1286 PDF objects out of 1440 (max. 8388607)
- 221 named destinations out of 1000 (max. 500000)
- 851 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1386 PDF objects out of 1440 (max. 8388607)
+ 244 named destinations out of 1000 (max. 500000)
+ 954 words of extra memory for PDF output out of 10000 (max. 10000000)
 

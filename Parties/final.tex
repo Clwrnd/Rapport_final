@@ -713,6 +713,149 @@ Enfin, une soudure mal faite au niveau de la bascule D empêchait l'acquisition 
 \\
 \\
 Maintenant que nous avons mis en accord les résultats théoriques de simulation et pratiques, nous pouvons passer aux vrais tests sur le banc d'essai.
+\newpage
+\subsection{Test finaux}
 
+Pour les premiers tests sur le banc, n'ayant pas encore de boite et les bornes BNC n'étant donc pas soudées, nous nous sommes servis de câbles ayant à leur extrémité un embout coaxial et de l'autre des fils.
+\\
+Une fois la boite réalisée, il a été bien plus simple de connecter le système au différents éléments extérieurs grâce aux bornes fixées. Cependant, étant donné le PCB bloqué et certains composants difficiles d'accès, il était nécessaire de démonter ce dernier pour effectuer des tests.
+\\
+Parmi les éléments extérieurs, on compte le hacheur fournissant un signal commandant le moteur ainsi que le retour du courant du moteur via le hacheur, le GBF servant à ajuster la vitesse de fonctionnement et enfin la dynamo tachymétrique et le codeur incrémental pouvant être utilisés alternativement par le changement de l'état de l’interrupteur. La partie alimentation se compose de deux alimentations symétriques, l'une fournissant 15 V, l'autre -15 V et les deux reliées à une masse commune.
+\\
+Avant de se concentrer sur le bon fonctionnement du système, nous avons réglé les potentiomètres limitant le courant pour que le signal ne dépasse pas les 5 V. On retrouve ici le bon fonctionnement du limitateur:
+\begin{figure}[H]
+    \centering    \includegraphics[width=1\linewidth]{Images/oscillo/courantcodeur.png}
+    \caption{Bon fonctionnement du limitateur de courant}
+    \label{fig:placeholder}
+\end{figure}
+Puis, nous avons démarré le système pour tester l'asservissement à l'aide de la dynamo-tachymétrique et y vérifier que nous respections les exigences du cahier des charges.
+\newpage
+On observe sur la capture d'écran ci-dessous que nous respectons le temps de réponse 10 fois plus rapide qu'en boucle ouverte ainsi qu'un dépassement inférieur à 20 \%.
+\begin{figure}[H]
+    \centering    \includegraphics[width=0.9\linewidth]{Images/oscillo/depa vitesse.png}
+    \caption{Dépassement réel avec la dynamo-tachymétrique}
+    \label{fig:placeholder}
+\end{figure}
+\begin{figure}[H]
+    \centering    \includegraphics[width=0.9\linewidth]{Images/oscillo/vitesse tr5.png}
+    \caption{Temps de réponse réel avec la dynamo-tachymétrique}
+    \label{fig:placeholder}
+\end{figure}
+\newpage
+Après le succès de ce test, nous nous sommes penchés sur les essais avec le codeur incrémental. Voici ce que nous obtenions :
+\begin{figure}[H]
+    \centering    \includegraphics[width=1\linewidth]{Images/oscillo/vitesse_codeur_avant_correction.png}
+    \caption{Première réponse réelle avec le codeur incrémental}
+    \label{fig:placeholder}
+\end{figure}
 
+A ce moment, nous avions une réponse cohérente au niveau de la forme mais pas parfaitement en accord avec la théorie au niveau du gain. En effet, une erreur statique subsistait et le potentiomètre de gain ne suffisait pas à l'annuler.
+\\
+Le problème se situait en réalité au niveau du dérivateur. Nous avons observé avec une sonde de tension que le signal en sortie du dérivateur ne convenait pas, ce qui est la conséquence direct d'une constante de temps trop grande, elle-même issue d'un condensateur de mauvaise valeur.
+\\
+Nous avons mesuré le condensateur du dérivateur à l'aide d'un RLC-mètre, et avons remarqué qu'il avait une valeur de 10 nF contre 1 nF calculé. Nous avons donc changé ce condensateur pour un de 1 nF, puis repris les tests.
+\\
+\\
+Cette fois-ci, lorsque nous mettions le système sous tension, on remarquait un gain beaucoup trop important, alors qu'auparavant il était trop petit, ce qui était bon signe compte-tenu de notre situation.
+\\
+Nous avons donc graduellement diminué le gain du codeur avec le potentiomètre prévu à cet effet jusqu'à avoir une erreur statique nulle.
+\newpage
+Les résultats de ces tests sont donnés ci-dessous:
+\begin{figure}[H]
+    \centering    \includegraphics[width=1\linewidth]{Images/oscillo/codeur_corrige.png}
+    \caption{Première réponse réelle avec le codeur incrémental}
+    \label{fig:placeholder}
+\end{figure}
+On obtient maintenant des résultats plus que satisfaisant répondant à nos exigences.\\
+
+Par la suite, nous avons voulu comparer ces résultats avec nos simulations PSIM abordées précédemment. Nous avons donc superposé les courbes réelles et théoriques. En rouge, nous retrouvons la courbe réelle et en bleu celle simulée sur PSIM:
+\begin{figure}[H]
+    \centering    \includegraphics[width=0.8\linewidth]{Images/Modelisation/MATLAB/Tachy.png}
+    \caption{Comparaison courbes réelle et théorique - dynamo-tachymétrique}
+    \label{fig:placeholder}
+\end{figure}
+\begin{figure}[H]
+    \centering    \includegraphics[width=1\linewidth]{Images/Modelisation/MATLAB/Codeur_corrige.png}
+    \caption{Comparaison courbes réelle et théorique - codeur incrémental}
+    \label{fig:placeholder}
+\end{figure}
+\textit{On a en abscisse le temps en seconde et en ordonnée l'image de la vitesse en volt}.\\ \\
+On constate de très bonnes correspondances entre ces courbes. Cela valide le fonctionnement correct de notre système complet.
+\vspace{2cm}
+\subsection{Montage final}
+\subsubsection{Réalisation de la boite}
+
+Pour la réalisation de la boite, nous avons opté pour l'impression 3D pour sa polyvalence et sa flexibilité.
+\\
+Le boîtier n'a pas que pour objectif d'apporter un aspect esthétique et sécurisé au projet. Il assure également la stabilité des soudures et la fixations des éléments entre les bornes du PCB et les prises à l'extérieur de la boîte. En effet, chacun des éléments a une place adaptée à son mode de fixation et un espace suffisant pour éviter tout faux contact et courts-circuits. Ensuite, les inscriptions sur l'extérieur de la boite indiquent quel signal ou alimentation doit être appliquée pour chaque borne extérieure, ainsi que la position de l'interrupteur et le sens rotation.
+\newpage
+Un premier prototype a été réalisé pour ajuster les tolérances des trous et fixations des éléments.
+\\
+Le logiciel utilisé pour la modélisation est FreeCAD. L'impression a été réalisée sur une imprimante FDM avec du filament PLA.
+\\
+\begin{figure}[H]
+    \centering
+
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Images/photo_pcb/boite_modelisation2.png}
+        \caption{Modélisation 3D du boîtier sur FreeCad}
+        \label{fig:face-cms}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Images/photo_pcb/boite_réelle.jpg}
+        \caption{Boitier réel}
+        \label{fig:face-traversants}
+    \end{minipage}
+
+\end{figure}
+\vspace{2cm}
+\subsubsection{Intégration dans la boite}
+Le PCB principal vient se loger dans la boite et est fixé par des vis via des trous disponibles aux quatre coins de celui-ci. De même pour le PCB du connecteur VGA. Avant de fixer les fiches BNC, on soude un fil à la bague servant à relier la masse au câble se logeant dans la borne et un autre fil dans le pin de contact avant de les visser sur les faces extérieures de la boîte, puis on les sécurise à l'aide d'une clef de serrage. Pour les fiches bananes, on utilise des cosses que l'on fixe à des câbles pour faciliter leur contact, ces dernières sont ensuite fixées de la même manière que les fiches BNC. De même pour l'interrupteur qui vient se loger à l'emplacement entre les inscriptions "Codeur" et "Tachy" indiquant quel mode de fonctionnement est sélectionné.
+\newpage
+Une fois le PCB fixé à la boîte, on peut raccorder les fiches bananes et BNC sur les borniers, eux-mêmes directement liés aux deux PCB grâce aux câbles reliés aux fiches déjà en place. Enfin, on peut glisser les LEDs dans les trous prévus à cet effet dans le couvercle. Le couvercle peut alors être vissé à la boîte pour la fermer.
+\\
+
+\begin{figure}[H]
+    \centering
+
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Images/photo_pcb/Intégration du pcb.jpg}
+        \caption{PCB intégré à la boite vue du haut}
+        \label{fig:face-cms}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Images/photo_pcb/pcb dans boite exterieur.jpg}
+        \caption{PCB intégré à la boite vue de l'extérieur}
+        \label{fig:face-traversants}
+    \end{minipage}
+
+\end{figure}
+\newpage
+\section{Gestion de projet}
+Durant ce projet, nous avons suivi un déroulé assez classique dans notre gestion de projet, composée des étapes suivantes :
+\begin{itemize}
+    \item Étude du cahier des charges
+    \item Étude théorique du sujet
+    \item Modélisation numérique sur logiciel
+    \item Sélection des composants réels
+    \item Réalisation physique du projet
+    \item Tests et mesures du produit final
+\end{itemize}
+Naturellement, les tâches ont été réparties et
+certains éléments ont apporté de la nouveauté par rapport aux projets que nous avions réalisé précédemment. Notamment, nous n'avions jamais travaillé en groupe de plus de 2 pour un projet nécessitant ce niveau d'implication. Le fait d'être 4 à travailler sur le projet nous a demandé un effort supplémentaire dans la séparation des tâches. La commande des composants a été également plus conséquente et a demandé de l'optimisation pour ne pas dépasser le budget de 25 € imposé par le cahier des charges notamment en faisant une commande commune entre groupes.
+\\
+\\
+
+\section{Conclusion}
+
+Pour conclure, ce projet nous aura apporté de l'expérience dans la mobilisation de notions d'automatique, principalement par la conception de boucles d'asservissement et la manipulation de fonctions de transfert. L'électrotechnique était également au centre du projet, à travers la modélisation d'un moteur et de l'utilisation de capteurs puis finalement, l'électronique de puissance, par la modélisation d'un hacheur. Également, l'utilisation approfondie de logiciels pour des applications plus conséquentes a développé nos compétences et nous a encouragé à l'utilisation de ces outils. Finalement, nous avons eu l'occasion de développer nos compétences en terme de réalisation pratique par la conception et la soudure d'un PCB.
+\\
+Ce projet aura été formateur dans l’apprentissage de la gestion de projet détaillée plus haut, il s'agit d'un bagage qui nous servira lors des prochains projet à réaliser dans notre cursus et dans notre métier d'ingénieur.\\
+Dans l’ensemble, il aura été une totale réussite tant dans le respect du cahier des charges que dans la réalisation. Nous tenons à remercier M. Flieller pour son accompagnement tout au long du projet.
 

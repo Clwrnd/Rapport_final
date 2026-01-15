@@ -60,4 +60,10 @@
 \contentsline {subsubsection}{\numberline {9.ii.b}Modélisations finies}{54}{subsubsection.9.2.2}%
 \contentsline {subsection}{\numberline {9.iii}Soudures et Tests de la carte}{57}{subsection.9.3}%
 \contentsline {subsection}{\numberline {9.iv}Tests préliminaires}{58}{subsection.9.4}%
-\contentsline {section}{Arborescences des fichiers par figure}{59}{section*.86}%
+\contentsline {subsection}{\numberline {9.v}Test finaux}{59}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.vi}Montage final}{63}{subsection.9.6}%
+\contentsline {subsubsection}{\numberline {9.vi.a}Réalisation de la boite}{63}{subsubsection.9.6.1}%
+\contentsline {subsubsection}{\numberline {9.vi.b}Intégration dans la boite}{64}{subsubsection.9.6.2}%
+\contentsline {section}{\numberline {10}Gestion de projet}{66}{section.10}%
+\contentsline {section}{\numberline {11}Conclusion}{66}{section.11}%
+\contentsline {section}{Arborescences des fichiers par figure}{67}{section*.95}%
