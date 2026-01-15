@@ -22,7 +22,7 @@ Nous avons  ainsi le schéma Simulink suivant:
     \centering
     \includegraphics[width=1\linewidth]{Images//Modelisation/MATLAB/Matlab_complet.jpg}
     \caption{Schéma-bloc de l'asservissement avec capteurs \hyperref[sec:arb]{*} }
-    \label{}
+    \label{fig:43}
 \end{figure}
 Où $G$ et $H_0$ sont les fonctions de transfert permettant d'obtenir respectivement le courant (ou sa tension image considérant un gain unitaire) à partir de la commande issue des correcteurs et la tension image de la vitesse à partir du courant moteur.
 Le schéma utilisé pour PSIM est le même que celui utilisé pour la vérification de l'asservissement de vitesse, ce dernier faisant déjà intervenir tous les éléments.
@@ -33,14 +33,14 @@ Nous retrouverons sur les figures suivantes le modèle avec le hacheur de PSIM e
     \centering
     \includegraphics[width=0.7\linewidth]{Images/Modelisation/MATLAB/Comp_syst_complet_asservi_vitesse.png}
     \caption{Vérification de l'asservissement avec capteur (vitesse) \hyperref[sec:arb]{*} }
-    \label{}
+    \label{fig:44}
 \end{figure}
 \textit{On a en abscisse le temps en seconde et en ordonnée l'image de la vitesse en volt}.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\linewidth]{Images/Modelisation/MATLAB/Comp_syst_complet_asservi_courant.png}
     \caption{ Vérification de l’asservissement avec capteur (courant) \hyperref[sec:arb]{*} }
-    \label{}
+    \label{fig:45}
 \end{figure}
 \textit{On a en abscisse le temps en seconde et en ordonnée le courant en ampère (ou son image en volt).}
 \\
@@ -218,6 +218,7 @@ Nous avons dans un premier temps simulé la méthode 1 en tenant compte de toute
     \centering
     \includegraphics[width=0.42\linewidth]{Images/Modelisation/PSIM/NE555.jpg}
     \caption{Schéma de simulation de la méthode 1 sous PSIM}
+    \label{fig:53}
 \end{figure}
 \textit{Il est important de noter que lorsque nous avons réalisé ces simulations, nous n'avions pas encore tous les éléments concernant le système (tension de sortie du capteur à l'état haut...).\\ De plus, ce n'est pas la méthode finale que nous avons décidé d'adopter, et le but de ces simulations était de nous assurer du fonctionnement de la méthode. Ainsi, certains éléments pourraient manquer de cohérence, mais cela ne retire pas les conclusions quant à son bon fonctionnement. Si nous avions choisi cette méthode, nous aurions, comme nous le verrons pour l'autre solution, approfondi la simulation avec les composants réels.} \\ \\
 Le gain se situe dans le même bloc que le filtre. Sur la figure suivante, on retrouve la réponse du système asservie avec le retour vitesse provenant du codeur. En rouge, on retrouve la réponse en sortie du circuit de mise en forme et en vert la réponse en sortie du capteur tachymétrique.
@@ -225,6 +226,7 @@ Le gain se situe dans le même bloc que le filtre. Sur la figure suivante, on re
     \centering
     \includegraphics[width=1\linewidth]{Images/Modelisation/PSIM/NE55_Ass.png}
     \caption{Résultat méthode 1 }
+    \label{fig:54}
 \end{figure}
 \textit{On a en abscisse le temps en seconde et en ordonnée la tension image de la vitesse en volt.} \\ \\
 On obtient bien les caractéristiques attendues et on conclut que la méthode fonctionne.
@@ -235,7 +237,6 @@ Nous nous sommes assurés de la même façon avec succès du bon fonctionnement 
     \centering
     \input{CircuitTikz/multiplexeur}
     \caption{Multiplexeur analogique}
-    \label{fig:placeholder}
 \end{figure}
 Ce montage permutera entre le signal inversé ou non-inversé en fonction du signal appliqué à la base du MOSFET. Ce dernier proviendra du circuit \textbf{indicateur de sens de rotation} que nous verrons plus tard. \\
 \newpage
@@ -244,7 +245,7 @@ Nous pouvons maintenant passer à la mise en œuvre complète du circuit de mise
     \centering
     \includegraphics[width=1\linewidth]{Images/Modelisation/PSIM/Circuit_codeur_pinal.png}
     \caption{Schéma de simulation de la méthode 2 sous PSIM}
-    \label{fig:placeholder}
+    \label{fig:56}
 \end{figure}
 On note l'ajout d'un suiveur avant le circuit dérivateur pour ne pas que les étages suivants n'ait d'influence sur la sortie du comparateur. Le filtre sera simplement un circuit RC. Nous exposerons les résultats de simulation du système complet dans le chapitre suivant.
 
@@ -355,7 +356,7 @@ Maintenant que notre système réel est complètement dimensionné, nous pouvons
     \centering
     \includegraphics[width=1.\linewidth]{Images/Modelisation/PSIM/schm_reel_1.png}
     \caption{Schéma de simulation du système réel sous PSIM - Boucle d'asservissement}
-    \label{fig:placeholder}
+    \label{fig:59}
 \end{figure}
 
 
@@ -363,7 +364,7 @@ Maintenant que notre système réel est complètement dimensionné, nous pouvons
     \centering
     \includegraphics[width=1.\linewidth]{Images/Modelisation/PSIM/schm_reel_2.png}
     \caption{Schéma de simulation du système réel sous PSIM - Partie capteurs}
-    \label{fig:placeholder}
+    \label{fig:60}
 \end{figure}
 Nous avons simulé grâce à ce schéma le bon fonctionnement du système complet avec \textbf{les deux capteurs} pour des consignes \textbf{positives} et \textbf{négatives}.
 \newpage
@@ -372,28 +373,346 @@ Voici les résultats, on retrouvera en rouge les courbes théoriques attendues a
     \centering
     \includegraphics[width=1.\linewidth]{Images/Modelisation/PSIM/tacchy_reel_plus.png}
     \caption{Résultats pour une consigne positive avec le capteur tachymétrique}
-    \label{fig:placeholder}
+    \label{fig:61}
 \end{figure}
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.\linewidth]{Images/Modelisation/PSIM/tachy_reel_moins.png}
     \caption{Résultats pour une consigne négative avec le capteur tachymétrique}
-    \label{fig:placeholder}
+    \label{fig:62}
 \end{figure}
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.1\linewidth]{Images/Modelisation/PSIM/Codeur_simu_reel_plus.png}
     \caption{Résultats pour une consigne positive avec le codeur incrémental}
-    \label{fig:placeholder}
+    \label{fig:63}
 \end{figure}
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.\linewidth]{Images/Modelisation/PSIM/codeur_reel_moins.png}
     \caption{Résultats pour une consigne négative avec le codeur incrémental}
-    \label{fig:placeholder}
+    \label{fig:64}
 \end{figure}
 \textit{On a en abscisse le temps en seconde et en ordonnée l'image de la vitesse en volt}.\\
 \\
 On constate une très bonne correspondance entre théorie et système réel simulé ce qui valide donc notre dimensionnement. On peut à présent passer à la création de la carte électronique.
+\section{Réalisation pratique}
+
+\subsection{Implémentation dans Proteus}
+Maintenant que nous avons définis et dimensionnés nos éléments, nous pouvons commencer à les implémenter dans Proteus.
+\\
+\\
+Premièrement, mettons en place les entrées et sorties des signaux utiles. Nous avons opté, pour ce projet, de séparer les bornes d'entrées de la carte afin d'avoir plus de flexibilité. Ainsi, l'entrée sur la carte se fera via des borniers à 2, 3 ou 4 entrées. La masse de notre circuit de commande sera faite en reliant le "-" de l'alimentation positive et le "+" de l'alimentation négative. Ceci sera fait directement sur l'alimentation. De plus, nous allons placer des condensateurs de découplage sur les alimentations, afin de réduire au maximum le bruit. Ils auront une valeur de 1 µF.
+\newpage
+On définit donc tout cela sur Proteus comme suit :
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\linewidth]{Images/photo_pcb/Alims et entrées.png}
+    \caption{Entrées de la carte}
+    \label{fig:placeholder}
+\end{figure}
+Il est important de bien rajouter la masse sur les borniers afin d'avoir la même référence de tension sur les capteurs, le hacheur et le circuit de commande.
+\\
+\\
+Ensuite, nous allons réaliser la boucle principale de notre asservissement, c'est à dire le comparateur suivi du correcteur de vitesse, puis du limiteur de courant, du second comparateur et du correcteur de courant.
+\\
+\\
+Pour ce faire, nous avons décidé d'utiliser des TL084, car ces boîtiers comprennent 4 AOP, ce qui permettra par la suite de simplifier les routages. Avec un premier TL084, on peut donc réaliser la chaîne suivante :
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/photo_pcb/Première boucle proteus.png}
+    \caption{Première chaîne}
+    \label{fig:placeholder}
+\end{figure}
+\newpage
+On y retrouve, comme sur le schéma bloc, de gauche à droite :
+\begin{itemize}
+    \item Un soustracteur, la valeur des résistances importent peu du moment qu'elles sont toutes égales. Il s'agit du comparateur de vitesse.
+    \item Le correcteur PI de la vitesse, composé d'abord de la partie intégrale suivie de la partie proportionnelle.
+    \item Un limiteur de courant composé de diodes et de potentiomètres.
+\end{itemize}
+
+Avec le second TLO84, on termine la chaîne principale de l'asservissement, comme suit :
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/photo_pcb/Deuxième partie de la chaine.png}
+    \caption{Seconde partie de la chaîne principale}
+    \label{fig:placeholder}
+\end{figure}
+On retrouve à nouveau de gauche à droite, similairement au schéma bloc :
+
+
+\begin{itemize}
+    \item Un  nouveau soustracteur, qui joue le rôle de comparateur de courant.
+    \item Le correcteur PI du courant, composé d'abord de la partie intégrale suivie de la partie proportionnelle.
+\end{itemize}
+
+Au final, on se retrouve avec le montage complet suivant :
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/photo_pcb/chaine complete.png}
+    \caption{Chaîne complète d'asservissement}
+    \label{fig:placeholder}
+\end{figure}
+
+En plus de la chaîne d'asservissement principale, nous allons avoir besoin de certains circuits auxiliaires, notamment pour l'acquisition des signaux d'entrée.
+\\
+\\
+Comme nous l'avons expliqué en première partie, les signaux issus de codeur incrémental doivent d'abord être comparés à une tension de référence 7,5 V, puis dérivés et enfin filtrés. La simulation PSIM a démontré l'importance du filtrage dans cette application.
+\\
+\\
+Sur Proteus, cela équivaut aux schémas suivants :
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Images/photo_pcb/Comparateur.png}
+    \caption{Comparateur de tension}
+    \label{fig:placeholder}
+\end{figure}
+Pour le comparateur, nous avons opté pour le LM2903, car ce dernier comporte deux comparateurs dans un unique boîtier, simplifiant à nouveau le routage par la suite.
+\\
+Nous avons également rajouté des résistances de pull-up à la sortie du comparateur car les sorties du codeur sont à collecteur ouvert. Nous nous sommes rendus compte par la suite que nous aurions dû les mettre en amont du comparateur et non en aval, mais nous avons su résoudre ce problème.
+\\
+\\
+Pour réaliser la tension de référence 7.5 V, nous avons simplement implémenter un circuit pont diviseur de tension avec un suiveur. Sous Proteus, cela donne :
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/photo_pcb/PdT.png}
+    \caption{Pont diviseur de tension par deux}
+    \label{fig:placeholder}
+\end{figure}
+
+Il s'agit d'un montage très basique mais fonctionnel. L'alimentation n'étant pas forcément stable, nous aurions pu également rajouter des condensateurs tampons pour palier aux éventuelles chutes de tension, ou directement utiliser un circuit régulateur de tension comme le LM7905. Cependant, nous avons jugé que pour cette application, un pont diviseur suffirait.
+\\
+\\
+Ensuite, nous avons besoin d'un dérivateur suivi immédiatement d'un filtre passe-bas puis d'un gain variable. Ce schéma est le suivant :
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/photo_pcb/Circuit codeur.png}
+    \caption{Dérivateur + filtre passe bas + Gain variable}
+    \label{fig:placeholder}
+\end{figure}
+
+Parallèlement à cela, on réalise, à l'aide d'une bascule D, le circuit permettant de déterminer le sens de rotation du codeur.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/photo_pcb/Bascule.png}
+    \caption{Circuit à bascule D}
+    \label{fig:placeholder}
+\end{figure}
+Nous avons rajouté des LEDs en tant qu'indicateur visuel du sens de rotation.
+\newpage
+Enfin, pour terminer l'acquisition du signal provenant du codeur, nous devons multiplexer le signal en sortie du filtre. Pour ce faire, on réalise le montage suivant :
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Images/photo_pcb/Multiplexeur.png}
+    \caption{Circuit de Multiplexage à AOP}
+    \label{fig:placeholder}
+\end{figure}
+Où le signal de grille du MOS est le signal $\bar{Q}$ de la bascule et celui en entrée de $R_{24}$ et $ R_{26}$ est le signal en sortie du filtre passe bas.
+\\
+\\
+Ainsi, la chaîne complète d'acquisition du signal du codeur incrémental est donnée ci-dessous :
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/photo_pcb/Chaine complete codeur.png}
+    \caption{Chaîne complète d'acquisition du codeur}
+    \label{fig:placeholder}
+\end{figure}
+\newpage
+Enfin, pour finaliser la commande, il ne nous reste plus qu'à implémenter un simple circuit diviseur de tension par deux pour l'acquisition du signal de la dynamo tachymétrique. Ceci donne :
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{Images/photo_pcb/tachy div.png}
+    \caption{Diviseur de tension pour le signal issu  de la dynamo tachymétrique.}
+    \label{fig:placeholder}
+\end{figure}
+
+Avec ceci nous concluons la partie schématique de l'implémentation sur Proteus. Après avoir vérifié les liens entre toutes les sources et les circuits, nous pouvons passer au routage de la carte.
+
+
+\subsection{Création du PCB}
+Nous pouvons maintenant nous concentrer sur la réalisation du PCB. Cette partie du projet est importante car c'est avec elle que le projet s'ancre dans le réel. Nous devrons maintenant nous projeter afin de designer une carte optimisée et physiquement réalisable.
+\\
+\\
+Pour les composants, nous avons choisi de partir sur une carte quasi entièrement composée de composants CMS. Cela nous permettra d'une part de simplifier les soudures car il suffira de placer les composants et de les mettre au four, mais également de gagner de la place car les composants CMS sont très petits.
+Des inconvénients existent néanmoins : les composants CMS seront plus compliqués à ressouder par la suite, et nous ne pourrons pas utiliser leurs broches comme des vias.
+\\
+\\
+Avant de commencer le routage, nous avons dû commander les composants en portant une grande attention à leurs dimensions. En effet, il fallait que leur taille ne soit pas trop petite afin de pouvoir les manipuler.
+\\
+Ensuite, une fois les composants choisis, nous avons pu en extraire les packages. La plupart du temps, les boîtiers des composants ne correspondaient pas à ce que nous avions sur Proteus, il a donc fallu réaliser les packages manuellement en s'aidant des datasheets des composants. En plus de cela, il fallait porter soin à l'ordre des broches des composants plus complexes comme le comparateur ou le transistor pour assurer de leur bon fonctionnement.
+
+\subsubsection{Règles de conception}
+Maintenant, parlons des règles de design que nous avons respecté pour s'assurer une carte réussie.
+\\
+Tout d'abord, nous avons appris lors des projets précédents qu'il est primordial de laisser un espace entre chaque piste pour éviter les courts-circuits. Dans l'onglet "règle de conception", nous avons alors stipulé un écart minimum de 25th entre toutes les zones cuivrées; pistes, vias, broches, plan de masse...
+\\
+Des exceptions à cette règle ont néanmoins du être faites au niveau des broches du comparateur en raison de sa très petite taille.
+\\
+\\
+La prochaine étape a consisté à rajouter un plan de masse sur chaque face du PCB. Cela présente plusieurs avantages. D'une part, cela accorde un accès facile à la masse sur toute une face, simplifiant grandement les routages. D'autre part, cela évite de retirer inutilement une grande quantité de cuivre et permet alors de gagner du temps et d'économiser de la matière lors de la conception physique de la carte.
+\\
+\\
+Au niveau des packages de composants, servant à modéliser ces derniers sur le logiciel, nous avons, pour ceux réalisés par nous-mêmes, volontairement agrandi les pastilles cuivrées afin d'avoir une marge de manœuvre lors des soudures. Cela permet également une meilleure répartition de l'étain sur le cuivre.
+\\
+\\
+Enfin, nous avons placé tous les composants CMS sur une face, et tous les composants traversants sur l'autre. Ainsi, nous savons que toutes les soudures se feront sur la même face (à l'exception des vias et de certaines broches des TL084 qui servent de vias).
+\\
+\\
+La carte étant un circuit de commande, nous n'avions pas de contraintes de puissances ou de perturbations électromagnétiques majeures, la taille des pistes importait donc peu.
+\\
+\\
+Certains de nos composants ne seront pas directement placés sur la carte mais reliés par des fils, comme les LEDs et le switch. Pour les réaliser, nous avons donc pris des packages ayant le même nombre de broches sans s'attarder sur les dimensions.
+
+
+\subsubsection{Modélisations finies}
+Maintenant que nous avons les règles de conception en tête, nous pouvons commencer le design du PCB.
+\\
+
+Le PCB final est donné ci-dessous :
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/photo_pcb/PCB_final.png}
+    \caption{Design du PCB avant impression}
+    \label{fig:placeholder}
+\end{figure}
+
+Remarquons que les règles de conception ont bien été respectées avec un écart précis entre chaque piste. Les seules exceptions aux règles se situent au niveau du comparateur et des potentiomètres, car les broches des composants elles-mêmes ne les respectent pas.
+\\
+\\
+Concernant les TL084, nous avions d'abord opté pour des composants traversants, afin de pouvoir utiliser les broches de ces derniers comme des vias et ainsi limiter les perçages sur la carte. Cependant, au moment de la commande, il ne restait plus que leur version CMS sur Farnell. Ainsi, nous avons dû "transformer" ces composants CMS en composants traversants.
+\\
+Lorsque l'on utilise des puces CMS comme nous l'avons fait pour les AOP, il est d'usage pour des projets de ce type de réaliser une carte de support à CMS pour simplifier la mise en place de ces derniers. C'est ce que nous avons fait :
+\\
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Images/photo_pcb/CMS_prot.png}
+        \caption{Modélisation du PCB accueillant le composant CMS}
+        \label{fig:face-traversants}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Images/photo_pcb/CMS_réel.jpg}
+        \caption{PCB réel}
+        \label{fig:face-cms}
+    \end{minipage}
+\end{figure}
+La puce CMS étant trop large pour le support traversant, il a fallu la décaler et la placer à l'envers pour éviter un routage trop complexe.
+\newpage
+De même, pour le connecteur VGA, nous avons réalisé une carte pour simplifier les connexions entre la carte et ce dernier :
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Images/photo_pcb/VGA_Prot.png}
+        \caption{Modélisation du PCB accueillant le connecteur VGA}
+        \label{fig:face-traversants}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Images/photo_pcb/VGA_réel.jpg}
+        \caption{PCB assurant le lien avec le connecteur VGA}
+        \label{fig:face-cms}
+    \end{minipage}
+\end{figure}
+Nous nous sommes aidés du schéma suivant, montrant comment router les différentes entrées sur les bons pins du connecteur :
+\\
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{Images/photo_pcb/routage_vga.png}
+    \caption{Schéma de câblage du connecteur VGA}
+    \label{fig:placeholder}
+\end{figure}
+
+A noter que le codeur incrémental est alimenté en 15 V dans notre cas.
+\newpage
+\subsection{Soudures et Tests de la carte}
+Une fois la carte physique récupérée, nous avons dans un premier temps vérifié qu'aucun court circuit n'était présent. Nous n'en avons trouvé que deux, ce qui prouve que nous avons bien fait de mettre un écart minimal entre les pistes. Le cas échéant, il a suffit de gratter la piste avec un cutter pour résoudre le problème.
+\\
+\\
+Ensuite, nous avons pu commencer les soudures.
+\\
+\\
+Il fallait forcément commencer par les composants CMS car les traversants, munis de pièces en plastique, ne peuvent pas supporter les températures du four.
+Nous avons alors méthodiquement placé nos résistances, nos condensateurs, diodes, transistor et comparateur. Nous placions sur la carte d'abord toutes les résistances d'une certaine valeur avant de passer aux suivantes pour ne pas nous perdre dans les petits CMS. De plus, il fallait être vigilant au sens des diodes. Un trait fin sur le boîter permet d'indiquer la cathode.
+\\
+\\
+Ici, nous avons eu peu de problèmes. Seules deux résistances ont été mal soudées et donc ne faisaient pas le lien. Elles ont donc été ressoudées au fer et le problème était résolu.
+
+Nous avons par la suite soudé les vias. Ceux-ci sont au nombre de 18 et ont été faits avec du fil issu de câbles multibrins.
+\\
+\\
+Enfin, nous sommes passés aux composants traversants. La seule difficulté que nous avons rencontrée fut au niveau des supports des AOPs. En effet, nous ne disposions que d'un nouveau modèle dont les broches métalliques ne sont pas accessibles par le dessus. Ceci nous posa problème compte tenu que certaines soudures des pattes d'AOP devaient être faites des deux côtés de la carte.
+
+Nous nous en sommes sortis en récupérant des supports sur d'anciens projets.
+\\
+\\
+Voici à quoi ressemble la carte terminée :
+\begin{figure}[H]
+    \centering
+
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Images/photo_pcb/face cms.png}
+        \caption{Face CMS}
+        \label{fig:face-cms}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Images/photo_pcb/face traversants.png}
+        \caption{Face traversants}
+        \label{fig:face-traversants}
+    \end{minipage}
+
+\end{figure}
+
+Les PCB servant de support à la puce CMS vus précédemment se placent sur 3 des 4 supports. \\
+Trois fils sont également reliés à l'interrupteur pour changer de capteur de vitesse.
+\subsection{Tests préliminaires}
+Nous arrivons vers la fin de notre projet et nous devons maintenant réaliser certains tests préliminaires pour nous assurer du bon fonctionnement de la carte.
+\\
+\\
+Nous allons tout d'abord nous assurer du bon fonctionnement du circuit d'asservissement par retour tachymétrique, puis nous vérifierons l'acquisition du signal issu du codeur incrémental.
+\\
+\\
+Pour ce faire, nous avons tout d'abord simulé sur PSIM ce qu'il se passerait si nous court circuitions les condensateurs des correcteurs intégrales. Ainsi, nous avions un ordre d'idée de ce à quoi nous devions nous attendre. Voici la simulation PSIM:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/Modelisation/PSIM/Test_preli.jpg}
+    \caption{Schéma de test préliminaire sur PSIM}
+    \label{fig:placeholder}
+\end{figure}
+Ensuite, nous avons réellement court-circuité ces condensateurs à l'aide d'une patte de résistance qui reliait leur borne. En plaçant en entrée un signal constant, nous avons pu mesurer la tension sur certains points importants et comparer à la simulation.
+\\
+Si les valeurs étaient cohérentes avec PSIM, cela signifiait que notre carte fonctionnait correctement et que nous pouvions donc passer aux tests finaux.
+\\
+\\
+Après avoir vérifié l'asservissement avec la dynamo tachymétrique sur le banc d'essai, nous avons pu nous assurer que l'acquisition du signal codeur ainsi que son traitement se passait comme convenu.
+\\
+Pour cela, il a d'abord fallu tester la correspondance des entrées du câble VGA avec le connecteur branché sur le codeur selon le schéma de câblage.
+\\
+Pour cela, nous devions vérifier au niveau de l'interrupteur que le signal issu du codeur était similaire à celui issu de la dynamo tachymétrique.
+\\
+Ici, contrairement à la dynamo., nous avons rencontré plusieurs problèmes avant de pouvoir asservir correctement. Tout d'abord, le codeur incrémental n'était pas alimenté par le +15V. Nous nous sommes rendus compte qu'il s'agissait d'une soudure mal faite au niveau du bornier du VGA, il nous a alors suffi de la refaire.
+\\
+Ensuite, nous avons remarqué que les signaux issus du codeur au niveau du comparateur n'avaient pas la forme en créneau attendu. Ce problème venait de l'absence de résistances de pull-up en sortie du codeur. Nous les avons alors rajoutées ce qui a réglé le problème.
+\\
+Enfin, une soudure mal faite au niveau de la bascule D empêchait l'acquisition du signal B du codeur. Nous l'avons refaite et avons finalement pu observer un signal similaire à celui issu de la dynamo. au niveau de l'interrupteur.
+\\
+\\
+Maintenant que nous avons mis en accord les résultats théoriques de simulation et pratiques, nous pouvons passer aux vrais tests sur le banc d'essai.
+
 
 

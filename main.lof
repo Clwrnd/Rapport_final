@@ -71,3 +71,23 @@
 \contentsline {figure}{\numberline {62}{\ignorespaces Résultats pour une consigne négative avec le capteur tachymétrique}}{46}{figure.caption.66}%
 \contentsline {figure}{\numberline {63}{\ignorespaces Résultats pour une consigne positive avec le codeur incrémental}}{46}{figure.caption.67}%
 \contentsline {figure}{\numberline {64}{\ignorespaces Résultats pour une consigne négative avec le codeur incrémental}}{47}{figure.caption.68}%
+\contentsline {figure}{\numberline {65}{\ignorespaces Entrées de la carte}}{48}{figure.caption.69}%
+\contentsline {figure}{\numberline {66}{\ignorespaces Première chaîne}}{48}{figure.caption.70}%
+\contentsline {figure}{\numberline {67}{\ignorespaces Seconde partie de la chaîne principale}}{49}{figure.caption.71}%
+\contentsline {figure}{\numberline {68}{\ignorespaces Chaîne complète d'asservissement}}{49}{figure.caption.72}%
+\contentsline {figure}{\numberline {69}{\ignorespaces Comparateur de tension}}{50}{figure.caption.73}%
+\contentsline {figure}{\numberline {70}{\ignorespaces Pont diviseur de tension par deux}}{50}{figure.caption.74}%
+\contentsline {figure}{\numberline {71}{\ignorespaces Dérivateur + filtre passe bas + Gain variable}}{51}{figure.caption.75}%
+\contentsline {figure}{\numberline {72}{\ignorespaces Circuit à bascule D}}{51}{figure.caption.76}%
+\contentsline {figure}{\numberline {73}{\ignorespaces Circuit de Multiplexage à AOP}}{52}{figure.caption.77}%
+\contentsline {figure}{\numberline {74}{\ignorespaces Chaîne complète d'acquisition du codeur}}{52}{figure.caption.78}%
+\contentsline {figure}{\numberline {75}{\ignorespaces Diviseur de tension pour le signal issu de la dynamo tachymétrique.}}{53}{figure.caption.79}%
+\contentsline {figure}{\numberline {76}{\ignorespaces Design du PCB avant impression}}{54}{figure.caption.80}%
+\contentsline {figure}{\numberline {77}{\ignorespaces Modélisation du PCB accueillant le composant CMS}}{55}{figure.caption.81}%
+\contentsline {figure}{\numberline {78}{\ignorespaces PCB réel}}{55}{figure.caption.81}%
+\contentsline {figure}{\numberline {79}{\ignorespaces Modélisation du PCB accueillant le connecteur VGA}}{56}{figure.caption.82}%
+\contentsline {figure}{\numberline {80}{\ignorespaces PCB assurant le lien avec le connecteur VGA}}{56}{figure.caption.82}%
+\contentsline {figure}{\numberline {81}{\ignorespaces Schéma de câblage du connecteur VGA}}{56}{figure.caption.83}%
+\contentsline {figure}{\numberline {82}{\ignorespaces Face CMS}}{57}{figure.caption.84}%
+\contentsline {figure}{\numberline {83}{\ignorespaces Face traversants}}{57}{figure.caption.84}%
+\contentsline {figure}{\numberline {84}{\ignorespaces Schéma de test préliminaire sur PSIM}}{58}{figure.caption.85}%
