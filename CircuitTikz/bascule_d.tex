@@ -1,0 +1,22 @@
+\begin{tikzpicture}[transform shape,scale=0.70]
+	% Paths, nodes and wires:
+	\node[latch] at (0, 0.16){};
+	\draw (-1.12, 1) -| (-3, 1.004);
+	\draw (-1.12, -0.68) -- (-3, -0.68);
+	\node[circ] at (-3, 1.004){};
+	\node[circ] at (-3, -0.68){};
+	\node[shape=rectangle, minimum width=0.965cm, minimum height=0.715cm] at (-3.25, 1.195){} node[anchor=north west, align=left, text width=0.577cm, inner sep=6pt] at (-3.75, 1.57){A};
+	\node[shape=rectangle, minimum width=0.965cm, minimum height=0.715cm] at (-3.25, -0.555){} node[anchor=north west, align=left, text width=0.577cm, inner sep=6pt] at (-3.75, -0.18){B};
+	\draw (1.12, 1) to[empty led] (3, 1);
+	\draw (1.12, -0.68) to[empty led] (3, -0.68);
+	\draw (3, 1) to[european resistor, l={$R$}] (6, 1);
+	\draw (3, -0.68) to[european resistor, l={$R$}] (6, -0.68);
+	\node[ground] at (7, -2){};
+	\draw (6, -0.68) -| (7, -1);
+	\draw (6, 1) -| (7, -0.68);
+	\draw (7, -1) -| (7, -2);
+	\node[ground] at (1.286, -2){};
+	\draw[-latex] (1.286, -1.857) -- (1.286, -0.833);
+	\node[shape=rectangle, minimum width=0.965cm, minimum height=0.715cm] at (1, -1.571){} node[anchor=north west, align=left, text width=0.577cm, inner sep=6pt] at (0.5, -1.196){$V_B$};
+	\node[circ] at (1.286, -0.68){};
+\end{tikzpicture}

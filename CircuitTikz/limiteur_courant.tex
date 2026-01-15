@@ -1,0 +1,33 @@
+\begin{tikzpicture}
+	% Paths, nodes and wires:
+	\node[op amp] at (3.19, 8.51){};
+	\draw (4.38, 8.51) -| (6, 8.52);
+	\draw (2, 9) -- (1, 9) -| (1, 10.25) -| (5, 8.5);
+	\draw (2, 8.02) -| (-0.5, 8.25);
+	\draw (-0.5, 8.25) to[empty diode] (-0.5, 10.25);
+	\draw (-0.5, 6.02) to[empty diode] (-0.5, 8.02);
+	\draw (-3.5, 8.02) to[european resistor, l={$R$}] (-0.5, 8.02);
+	\draw (1, 11.31) to[european potentiometer, l_={$R'$}] (-2, 11.31);
+	\draw (-0.5, 10.25) -| (-0.5, 10.75);
+	\draw (-2, 5.46) to[european potentiometer, l_={$R'$}] (1, 5.46);
+	\node[ground] at (-2, 5){};
+	\draw (-2, 5) -- (-2, 5.46);
+	\node[vcc] at (1, 5.75){};
+	\draw (1, 5.5) -- (1, 5.46) -| (1, 5.75);
+	\node[ground] at (-2, 11){};
+	\draw (-2, 11) |- (-2, 11.31);
+	\node[vcc] at (1, 11.75){};
+	\draw (1, 11.5) -| (1, 11.75);
+	\draw (1, 11.31) |- (1, 11.5);
+	\draw[-latex] (-3.5, 5) -- (-3.5, 7.75);
+	\node[circ] at (-3.5, 8.02){};
+	\node[circ] at (6, 8.5){};
+	\draw[-latex] (6, 5) -- (6, 8.25);
+	\node[ground] at (-3.5, 5){};
+	\node[ground] at (6, 5){};
+	\node[shape=rectangle, minimum width=1.215cm, minimum height=1.215cm] at (-3.875, 6.25){} node[anchor=north west, align=left, text width=0.827cm, inner sep=6pt] at (-4.5, 6.875){\Large $V_e$};
+	\node[shape=rectangle, minimum width=1.215cm, minimum height=1.215cm] at (6.75, 6.25){} node[anchor=north west, align=left, text width=0.827cm, inner sep=6pt] at (6.125, 6.875){\Large $V_s$};
+	\node[shape=rectangle, minimum width=2.527cm, minimum height=1.215cm] at (1.219, 6.25){} node[anchor=north west, align=left, text width=2.139cm, inner sep=6pt] at (-0.062, 6.875){\small $-V_{cc}=-15 V$};
+	\node[shape=rectangle, minimum width=2.59cm, minimum height=1.215cm] at (1.187, 12.25){} node[anchor=north west, align=left, text width=2.202cm, inner sep=6pt] at (-0.125, 12.875){\small $+V_{cc}=15 V$};
+	\node[circ] at (-0.5, 8.02){};
+\end{tikzpicture}

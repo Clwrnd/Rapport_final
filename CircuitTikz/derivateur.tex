@@ -1,0 +1,23 @@
+\begin{tikzpicture}
+	% Paths, nodes and wires:
+	\node[op amp, yscale=-1] at (6.19, 5.49){};
+	\draw (5, 5) -- (4, 5) -| (4, 4) -- (8, 4) -| (8, 5.5) |- (7.38, 5.49);
+	\draw (8, 5.5) to[capacitor, l={$C$}] (10, 5.5);
+	\draw (10, 5.5) to[european resistor, l_={$R$}] (10, 2);
+	\draw (12, 2) to[empty diode, l_={$D$}] (12, 5.5);
+	\draw (10, 5.5) -- (12, 5.5);
+	\draw (10, 2) -- (12, 2);
+	\draw (5, 5.98) -| (3, 6);
+	\node[circ] at (3, 5.98){};
+	\node[circ] at (10, 5.5){};
+	\node[circ] at (12, 5.5){};
+	\draw (12, 5.5) -- (13, 5.5);
+	\draw (12, 2) -- (13, 2);
+	\node[ground] at (11, 2){};
+	\draw[line width=1pt, -latex] (3, 2) -- (3, 5.75);
+	\draw[line width=1pt, -latex] (10.5, 2.25) -- (10.5, 5.25);
+	\node[ground] at (3, 2){};
+	\node[shape=rectangle, minimum width=2.215cm, minimum height=1.215cm] at (3.125, 3.25){} node[anchor=north west, align=left, text width=1.827cm, inner sep=6pt] at (2, 3.875){\LARGE $v_e$};
+	\node[shape=rectangle, minimum width=2.215cm, minimum height=1.215cm] at (11.625, 3.375){} node[anchor=north west, align=left, text width=1.827cm, inner sep=6pt] at (10.5, 4){\LARGE $v_s$};
+	\node[circ] at (12, 2){};
+\end{tikzpicture}

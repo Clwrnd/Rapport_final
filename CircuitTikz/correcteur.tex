@@ -1,0 +1,26 @@
+\begin{tikzpicture}
+	% Paths, nodes and wires:
+	\node[op amp] at (-1.19, -0){};
+	\node[op amp] at (4.44, -0.49){};
+	\node[ground] at (-2.5, -1.98){};
+	\draw (-2.38, -0.48) |- (-2.5, -0.49) -| (-2.5, -1.99);
+	\draw (-2.38, 0.49) to[european resistor, l={$R$}] (-6.25, 0.5);
+	\draw (-3.25, 0.5) -- (-3.25, 2);
+	\draw (-3.25, 2) to[european resistor, l={$R$}] (-1, 2);
+	\draw (-1, 2) to[capacitor, l={$C$}] (0.5, 2);
+	\draw (0.5, 2) -- (1, 2) -- (1, -0) -- (0, -0);
+	\draw (1, -0) to[european resistor, l_={$R_1$}] (3, -0);
+	\draw (3, -0) -- (3.25, -0);
+	\draw (3, -0) -| (3, 0.75) -| (3, 1.25);
+	\draw (3, 1.25) to[european resistor, l={$R_2$}] (6, 1.25);
+	\draw (5.63, -0.49) -| (6, -0.5) -| (6, 1.25);
+	\draw (6, -0.49) -| (7, -0.5);
+	\node[ground] at (3, -1.977){};
+	\draw (3.25, -0.982) -- (3, -0.982) -- (3, -1.982);
+	\node[circ] at (7, -0.5){};
+	\node[circ] at (-6.25, 0.5){};
+	\draw[-latex] (-6.25, -2) -- (-6.25, 0.25);
+	\draw[-latex] (7, -2) -- (7, -0.75);
+	\node[shape=rectangle, minimum width=0.965cm, minimum height=0.715cm] at (-6.552, -0.256){} node[anchor=north west, align=left, text width=0.577cm, inner sep=6pt] at (-7.052, 0.119){\small $V_E$};
+	\node[shape=rectangle, minimum width=0.965cm, minimum height=0.715cm] at (7.454, -1.253){} node[anchor=north west, align=left, text width=0.577cm, inner sep=6pt] at (6.954, -0.878){\small $V_S$};
+\end{tikzpicture}

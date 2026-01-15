@@ -1,0 +1,41 @@
+\begin{tikzpicture}
+	% Paths, nodes and wires:
+	\node[shape=rectangle, draw, line width=1pt, minimum width=2.965cm, minimum height=3.215cm] at (5.5, 5.375){};
+	\node[shape=rectangle, minimum width=1.09cm, minimum height=0.465cm] at (4.5, 6.3){} node[anchor=north west, align=left, text width=0.702cm, inner sep=6pt] at (3.938, 6.55){\footnotesize RESET};
+	\node[shape=rectangle, minimum width=1.09cm, minimum height=0.436cm] at (4.522, 5.827){} node[anchor=north west, align=left, text width=0.702cm, inner sep=6pt] at (3.959, 6.062){\footnotesize DISCH};
+	\node[shape=rectangle, minimum width=1.09cm, minimum height=0.436cm] at (4.522, 4.788){} node[anchor=north west, align=left, text width=0.702cm, inner sep=6pt] at (3.959, 5.024){\footnotesize THRES};
+	\node[shape=rectangle, minimum width=1.09cm, minimum height=0.436cm] at (4.522, 4.317){} node[anchor=north west, align=left, text width=0.702cm, inner sep=6pt] at (3.959, 4.553){\footnotesize TRIG};
+	\node[shape=rectangle, minimum width=1.09cm, minimum height=0.719cm] at (4.92, 6.623){} node[anchor=north west, align=left, text width=0.702cm, inner sep=6pt] at (4.358, 7){\footnotesize CONT};
+	\node[shape=rectangle, minimum width=1.09cm, minimum height=0.436cm] at (6.519, 5.344){} node[anchor=north west, align=left, text width=0.702cm, inner sep=6pt] at (5.957, 5.579){\footnotesize OUT};
+	\node[shape=rectangle, minimum width=1.09cm, minimum height=0.436cm] at (6.29, 4.143){} node[anchor=north west, align=left, text width=0.702cm, inner sep=6pt] at (5.727, 4.378){\footnotesize GND};
+	\node[ground] at (6.25, 3.5){};
+	\draw (7, 5.25) -- (8, 5.25);
+	\draw (4.25, 8.5) to[curved capacitor] (4.25, 7.75);
+	\draw (4.25, 8.5) -| (4.25, 9) -- (5, 9) -| (5, 7);
+	\node[tlground] at (4.25, 7.5){};
+	\draw (4.25, 7.5) -| (4.25, 7.75);
+	\node[shape=rectangle, minimum width=1.09cm, minimum height=0.719cm] at (6.688, 6.627){} node[anchor=north west, align=left, text width=0.702cm, inner sep=6pt] at (6.125, 7.004){\small $V_{cc}$};
+	\draw (6.5, 7) -| (6.5, 9);
+	\draw (6.5, 9) -| (6.5, 9.5);
+	\node[circ] at (6.5, 9.5){};
+	\node[notcirc] at (3.938, 6.235){};
+	\draw (3.851, 6.235) |- (3.25, 6.25) -- (3.25, 9.5);
+	\draw (3.25, 9.5) -- (6.5, 9.5);
+	\node[circ] at (3.25, 9.5){};
+	\draw (2.5, 9.5) to[european resistor, l_={$R$}, label distance=0.08cm] (2.5, 6.5);
+	\draw (2.5, 9.5) -- (3.25, 9.5);
+	\draw (4, 5.75) -- (2.5, 5.75) -| (2.5, 6.5);
+	\draw (2.5, 5.75) |- (4, 4.75);
+	\node[circ] at (2.5, 5.75){};
+	\node[circ] at (2.5, 4.75){};
+	\draw (2.5, 3.75) to[curved capacitor, l_={$C$}, label distance=0.08cm] (2.5, 3);
+	\node[ground] at (2.5, 3){};
+	\draw (2.5, 4.5) -| (2.5, 4.75);
+	\draw (2.5, 3.75) -| (2.5, 4.5);
+	\draw (4, 4.25) |- (1.5, 4.25);
+	\node[shape=rectangle, minimum width=1.09cm, minimum height=0.436cm] at (0.687, 4.372){} node[anchor=north west, align=left, text width=0.702cm, inner sep=6pt] at (0.125, 4.608){Entrée};
+	\node[shape=rectangle, minimum width=1.09cm, minimum height=0.436cm] at (8.523, 5.4){} node[anchor=north west, align=left, text width=0.702cm, inner sep=6pt] at (7.961, 5.635){Sortie};
+	\draw (6.25, 3.5) -| (6.25, 3.75);
+	\draw (6.5, 9.5) -- (6.5, 10.25);
+	\node[shape=rectangle, minimum width=1.09cm, minimum height=0.719cm] at (6.573, 10.569){} node[anchor=north west, align=left, text width=0.702cm, inner sep=6pt] at (6.011, 10.946){\large $V_{cc}$};
+\end{tikzpicture}

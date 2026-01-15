@@ -1,54 +1,56 @@
 \babel@toc {french}{}\relax 
 \par 
-\contentsline {section}{Introduction}{4}{section*.2}%
-\contentsline {section}{\numberline {1}Présentation des machines à courant continu utilisées}{4}{section.1}%
-\contentsline {subsection}{\numberline {1.i}Fonctionnement général d'une machine à courant continu}{4}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.ii}Caractéristiques des machines}{5}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.iii}Équations de fonctionnement}{5}{subsection.1.3}%
-\contentsline {section}{\numberline {2}Structure du système complet}{6}{section.2}%
-\contentsline {section}{\numberline {3}Cahier des charges}{7}{section.3}%
-\contentsline {section}{\numberline {4}Temporalité du projet}{7}{section.4}%
-\contentsline {section}{\numberline {5}Modélisation et simulation du système en boucle ouverte}{8}{section.5}%
-\contentsline {subsection}{\numberline {5.i}Modèle du moteur seul sans frottements ni charge}{8}{subsection.5.1}%
-\contentsline {subsubsection}{\numberline {5.i.a}Sous Matlab/Simulink}{8}{subsubsection.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.i.b}Sous PSIM}{9}{subsubsection.5.1.2}%
-\contentsline {subsubsection}{\numberline {5.i.c}Comparaison des deux modèles}{11}{subsubsection.5.1.3}%
-\contentsline {subsection}{\numberline {5.ii}Prise en compte des frottements et de la charge}{12}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.ii.a}Notions théoriques}{12}{subsubsection.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.ii.b}Implémentation sous PSIM}{13}{subsubsection.5.2.2}%
-\contentsline {subsubsection}{\numberline {5.ii.c}Implémentation sous Matlab/Simulink}{13}{subsubsection.5.2.3}%
-\contentsline {subsubsection}{\numberline {5.ii.d}Comparaison des deux modèles}{14}{subsubsection.5.2.4}%
-\contentsline {subsection}{\numberline {5.iii}Etude du régime permanent}{16}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.iv}Modélisation du hacheur}{17}{subsection.5.4}%
-\contentsline {subsubsection}{\numberline {5.iv.a}Notions théoriques}{17}{subsubsection.5.4.1}%
-\contentsline {subsubsection}{\numberline {5.iv.b}Implémentation sous PSIM}{18}{subsubsection.5.4.2}%
-\contentsline {subsubsection}{\numberline {5.iv.c}Implémentation sous Matlab/Simulink}{18}{subsubsection.5.4.3}%
-\contentsline {subsection}{\numberline {5.v}Prise en compte de la commande}{18}{subsection.5.5}%
-\contentsline {subsubsection}{\numberline {5.v.a}Notions théoriques}{18}{subsubsection.5.5.1}%
-\contentsline {subsubsection}{\numberline {5.v.b}Implémentation sous PSIM}{19}{subsubsection.5.5.2}%
-\contentsline {subsubsection}{\numberline {5.v.c}Implémentation sous Matlab/Simulink}{19}{subsubsection.5.5.3}%
-\contentsline {subsection}{\numberline {5.vi}Etude du régime permanent considérant la commande}{20}{subsection.5.6}%
-\contentsline {subsubsection}{\numberline {5.vi.a}Sous Matlab/Simulink}{20}{subsubsection.5.6.1}%
-\contentsline {subsubsection}{\numberline {5.vi.b}Sous PSIM}{20}{subsubsection.5.6.2}%
-\contentsline {section}{\numberline {6}Dimensionnement et simulation des asservissements}{22}{section.6}%
-\contentsline {subsection}{\numberline {6.i}Préliminaire à l'asservissement}{22}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.ii}Asservissement en courant}{23}{subsection.6.2}%
-\contentsline {subsubsection}{\numberline {6.ii.a}Calcul du correcteur}{23}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.ii.b}Vérification du correcteur}{26}{subsubsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.iii}Asservissement de vitesse}{27}{subsection.6.3}%
-\contentsline {subsubsection}{\numberline {6.iii.a}Démarche globale}{27}{subsubsection.6.3.1}%
-\contentsline {paragraph}{\numberline {6.iii.a.1}Calcul du correcteur}{27}{paragraph.6.3.1.1}%
-\contentsline {paragraph}{\numberline {6.iii.a.2}Vérification du correcteur}{31}{paragraph.6.3.1.2}%
-\contentsline {subsubsection}{\numberline {6.iii.b}Prise en compte des capteurs}{32}{subsubsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.iv}Lien entre valeur de référence et valeur moyenne}{34}{subsection.6.4}%
-\contentsline {section}{\numberline {7}Conception et dimensionnement des circuits électroniques}{35}{section.7}%
-\contentsline {subsection}{\numberline {7.i}Asservissements}{35}{subsection.7.1}%
-\contentsline {subsubsection}{\numberline {7.i.a}Correcteur de vitesse}{35}{subsubsection.7.1.1}%
-\contentsline {subsubsection}{\numberline {7.i.b}Correcteur de courant}{35}{subsubsection.7.1.2}%
-\contentsline {subsubsection}{\numberline {7.i.c}Comparateur}{35}{subsubsection.7.1.3}%
-\contentsline {subsection}{\numberline {7.ii}Circuit de mise en forme du signal tachymétrique}{35}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.iii}Circuit de mise en forme du signal du codeur incrémental}{35}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.iv}Limiteur de courant}{35}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.v}Limiteur de la tension de commande}{35}{subsection.7.5}%
-\contentsline {subsection}{\numberline {7.vi}Indicateur de sens de rotation}{35}{subsection.7.6}%
-\contentsline {section}{Arborescences des fichiers par figure}{36}{section*.50}%
+\contentsline {section}{Introduction}{5}{section*.2}%
+\contentsline {section}{\numberline {1}Présentation des machines à courant continu utilisées}{5}{section.1}%
+\contentsline {subsection}{\numberline {1.i}Fonctionnement général d'une machine à courant continu}{5}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.ii}Caractéristiques des machines}{6}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.iii}Équations de fonctionnement}{6}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Structure du système complet}{7}{section.2}%
+\contentsline {section}{\numberline {3}Cahier des charges}{8}{section.3}%
+\contentsline {section}{\numberline {4}Temporalité du projet}{8}{section.4}%
+\contentsline {section}{\numberline {5}Modélisation et simulation du système en boucle ouverte}{9}{section.5}%
+\contentsline {subsection}{\numberline {5.i}Modèle du moteur seul sans frottements ni charge}{9}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.i.a}Sous Matlab/Simulink}{9}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.i.b}Sous PSIM}{10}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.i.c}Comparaison des deux modèles}{12}{subsubsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.ii}Prise en compte des frottements et de la charge}{13}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.ii.a}Notions théoriques}{13}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.ii.b}Implémentation sous PSIM}{14}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.ii.c}Implémentation sous Matlab/Simulink}{14}{subsubsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.ii.d}Comparaison des deux modèles}{15}{subsubsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.iii}Etude du régime permanent}{17}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.iv}Modélisation du hacheur}{18}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5.iv.a}Notions théoriques}{18}{subsubsection.5.4.1}%
+\contentsline {subsubsection}{\numberline {5.iv.b}Implémentation sous PSIM}{19}{subsubsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.iv.c}Implémentation sous Matlab/Simulink}{19}{subsubsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.v}Prise en compte de la commande}{19}{subsection.5.5}%
+\contentsline {subsubsection}{\numberline {5.v.a}Notions théoriques}{19}{subsubsection.5.5.1}%
+\contentsline {subsubsection}{\numberline {5.v.b}Implémentation sous PSIM}{20}{subsubsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.v.c}Implémentation sous Matlab/Simulink}{20}{subsubsection.5.5.3}%
+\contentsline {subsection}{\numberline {5.vi}Etude du régime permanent considérant la commande}{21}{subsection.5.6}%
+\contentsline {subsubsection}{\numberline {5.vi.a}Sous Matlab/Simulink}{21}{subsubsection.5.6.1}%
+\contentsline {subsubsection}{\numberline {5.vi.b}Sous PSIM}{21}{subsubsection.5.6.2}%
+\contentsline {section}{\numberline {6}Dimensionnement et simulation des asservissements}{23}{section.6}%
+\contentsline {subsection}{\numberline {6.i}Préliminaire à l'asservissement}{23}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.ii}Asservissement en courant}{24}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.ii.a}Calcul du correcteur}{24}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.ii.b}Vérification du correcteur}{27}{subsubsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.iii}Asservissement de vitesse}{28}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.iii.a}Démarche globale}{28}{subsubsection.6.3.1}%
+\contentsline {paragraph}{\numberline {6.iii.a.1}Calcul du correcteur}{28}{paragraph.6.3.1.1}%
+\contentsline {paragraph}{\numberline {6.iii.a.2}Vérification du correcteur}{32}{paragraph.6.3.1.2}%
+\contentsline {subsubsection}{\numberline {6.iii.b}Prise en compte des capteurs}{33}{subsubsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.iv}Lien entre valeur de référence et valeur moyenne}{35}{subsection.6.4}%
+\contentsline {section}{\numberline {7}Conception et dimensionnement des circuits électroniques}{36}{section.7}%
+\contentsline {subsection}{\numberline {7.i}Asservissement}{36}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.i.a}Comparateur}{36}{subsubsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.i.b}Correcteur de vitesse}{37}{subsubsection.7.1.2}%
+\contentsline {subsubsection}{\numberline {7.i.c}Correcteur de courant}{38}{subsubsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.ii}Circuit de mise en forme du signal tachymétrique}{38}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.iii}Circuit de mise en forme du signal du codeur incrémental}{38}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.iv}Limiteur de courant}{43}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.v}Limiteur de la tension de commande}{44}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.vi}Indicateur de sens de rotation}{44}{subsection.7.6}%
+\contentsline {subsection}{\numberline {7.vii}Récapitulatif }{44}{subsection.7.7}%
+\contentsline {section}{\numberline {8}Simulation du système réel}{45}{section.8}%
+\contentsline {section}{Arborescences des fichiers par figure}{48}{section*.69}%

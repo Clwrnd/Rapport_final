@@ -1,0 +1,24 @@
+\begin{tikzpicture}
+	% Paths, nodes and wires:
+	\node[op amp] at (0.19, 0.498){};
+	\draw (-1, 0.986) to[european resistor, l_={$R$}] (-4.5, 1.006);
+	\draw (-1, 0.006) to[european resistor, l={$R$}] (-4, 0.006);
+	\draw (-1.5, 0.006) to[european resistor, l={$R$}] (-1.5, -2.494);
+	\node[ground] at (-1.5, -2.481){};
+	\draw (-1.5, 2.5) to[european resistor, l={$R$}] (2, 2.5);
+	\draw (1.38, 0.498) -| (2, 0.508) -| (2, 2.508);
+	\draw (2, 0.498) -- (3, 0.498);
+	\draw (-4.5, 1.008) -- (-5, 1.008);
+	\node[circ] at (3, 0.49){};
+	\node[circ] at (-5, 1){};
+	\node[circ] at (-4, -0){};
+	\draw[-latex] (-5, -2.25) -| (-5, 0.75);
+	\draw[-latex] (-4, -2.25) -- (-4, -0.25);
+	\draw[-latex] (3, -2.5) -- (3, 0.25);
+	\draw (-5, -2.25) -| (-5, -2.5);
+	\draw (-4, -2.25) -| (-4, -2.5);
+	\node[shape=rectangle, minimum width=0.965cm, minimum height=0.965cm] at (-5.238, 0.146){} node[anchor=north west, align=left, text width=0.577cm, inner sep=6pt] at (-5.738, 0.646){\small $V_1$};
+	\node[shape=rectangle, minimum width=0.965cm, minimum height=0.965cm] at (-4.238, -0.854){} node[anchor=north west, align=left, text width=0.577cm, inner sep=6pt] at (-4.738, -0.354){\small $V_2$};
+	\node[shape=rectangle, minimum width=0.965cm, minimum height=0.965cm] at (3.5, -0.5){} node[anchor=north west, align=left, text width=0.577cm, inner sep=6pt] at (3, -0){\small $V_S$};
+	\draw (-1.5, 2.5) -| (-1.5, 1);
+\end{tikzpicture}

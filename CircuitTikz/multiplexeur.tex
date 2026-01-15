@@ -1,0 +1,34 @@
+\begin{tikzpicture}
+	% Paths, nodes and wires:
+	\node[op amp] at (6.19, 5.49){};
+	\node[nigfete] at (4.5, 3.73){};
+	\draw (4.5, 4.5) -| (4.5, 5) -- (5, 5);
+	\draw (1.75, 6) to[european resistor, l={$R$}] (4.5, 5.98);
+	\draw (1.75, 5.02) to[european resistor, l_={$R$}] (4.5, 5);
+	\draw (4.75, 5.98) -- (4.5, 5.98);
+	\draw (1.75, 5.02) -- (1.75, 6);
+	\draw (1.75, 6) -- (1, 6);
+	\draw (7.75, 5.49) -| (8.5, 5.5);
+	\node[circ] at (1, 6){};
+	\node[circ] at (8.5, 5.5){};
+	\draw (3.52, 3.46) |- (2.25, 3.46);
+	\node[circ] at (2.25, 3.46){};
+	\draw[-latex] (1, 2.5) -- (1, 5.75);
+	\draw[-latex] (2.25, 2.5) -- (2.25, 3.25);
+	\draw[-latex] (8.5, 2.5) -- (8.5, 5.25);
+	\node[ground] at (1, 2.5){};
+	\node[ground] at (2.25, 2.5){};
+	\node[ground] at (4.5, 2.5){};
+	\node[ground] at (8.5, 2.5){};
+	\draw (4.5, 2.5) -| (4.5, 2.96);
+	\node[shape=rectangle, minimum width=0.965cm, minimum height=0.965cm] at (0.5, 3.75){} node[anchor=north west, align=left, text width=0.577cm, inner sep=6pt] at (0, 4.25){\Large $V_e$};
+	\node[shape=rectangle, minimum width=0.965cm, minimum height=0.965cm] at (9, 3.75){} node[anchor=north west, align=left, text width=0.577cm, inner sep=6pt] at (8.5, 4.25){\Large $V_s$};
+	\node[shape=rectangle, minimum width=0.965cm, minimum height=0.965cm] at (1.811, 2.591){} node[anchor=north west, align=left, text width=0.577cm, inner sep=6pt] at (1.311, 3.091){\large $V_B$};
+	\node[shape=rectangle, minimum width=1.715cm, minimum height=0.965cm] at (5.375, 3.5){} node[anchor=north west, align=left, text width=1.327cm, inner sep=6pt] at (4.5, 4){\small MOSFET};
+	\draw (5, 7.25) to[european resistor, l={$R$}] (7.75, 7.23);
+	\draw (4.75, 5.98) -| (4.75, 7.25);
+	\draw (7.75, 5.5) |- (7.38, 5.49);
+	\draw (7.75, 7.23) -- (7.75, 5.5);
+	\draw (4.75, 5.98) -| (5, 5.98);
+	\draw (5, 7.25) -- (4.75, 7.25);
+\end{tikzpicture}

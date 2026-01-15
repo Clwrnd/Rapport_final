@@ -11,7 +11,7 @@ Sur PSIM, le capteur nous retourne déjà une vitesse en $tr/min$, il suffira do
     \qquad
     \subfloat[\centering Sur PSIM]{{\includegraphics[width=6cm]{Images/Modelisation/PSIM/NV_Gain_PSIM.jpg}}}%
     \caption{Modifications prenant en compte les capteurs \hyperref[sec:arb]{*}}
-    \label{}
+    \label{fig:42}
 \end{figure}
 Pour le codeur incrémental, nous ferons en sorte qu'il ait un gain identique à la  dynamo-tachymétrique pour n'avoir qu'à dimensionner qu'un seul correcteur. \\ \\
 Après calcul des nouveaux correcteurs  grâce au \textit{PID Tuner}, nous obtenons les valeurs suivantes: $$C(p)=P\Big(1+I\dfrac{1}{p}\Big)~\text{avec}~P=2.27~\text{et}~I=22.8~s^{-1}$$
@@ -72,21 +72,328 @@ $$
 Ainsi: $$y\bigl(( k+1)T\bigl)- y\bigl(kT\bigl)=\int_{kT}^{ (k+1)T}(I_{Mref}-i_M)dt)=T\cdot I_{Mref}-\int_{kT}^{ (k+1)T}i_Mdt=0$$
 Il est donc enfin possible d'obtenir le résultat final:
 $$T\cdot I_{Mref}-\int_{kT}^{ (k+1)T}i_Mdt=0\Leftrightarrow I_{Mref}=\frac{1}{T}\int_{kT}^{ (k+1)T}i_Mdt=~<i_M>$$
-
-
-
 \section{Conception et dimensionnement des circuits électroniques}
+Maintenant que nous avons correctement dimensionné nos correcteurs, il est temps de concevoir le système électronique qui permettra de réaliser l'asservissement de manière effective. Pour cela, il faudra dimensionner les circuits relatifs à l'asservissement ainsi que certains circuits annexes primordiaux au bon fonctionnement de l'ensemble du système et au respect du cahier des charges. Il sera important de prendre en compte la tension d'alimentation de la carte qui sera une alimentation \textbf{symétrique +15 -15 V}.
+\subsection{Asservissement}
+Dans cette partie, nous nous concentrons sur les circuits propres à l'asservissement.
 
-\subsection{Asservissements}
-\subsubsection{Correcteur de vitesse}
-\subsubsection{Correcteur de courant}
 \subsubsection{Comparateur}
 
+Dans notre montage, nous aurons à plusieurs reprises besoin d'un comparateur. Ce composant a pour rôle, comme son nom l'indique, de comparer deux signaux d'entrées. La plupart du temps, un comparateur est un soustracteur, bien qu'il puisse également être un additionneur.
+Dans notre cas, nous utiliserons un soustracteur, dont le schéma est le suivant :
+\\
+\begin{figure}[H]
+    \centering
+    \input{CircuitTikz/comparateur}
+    \caption{Circuit comparateur}
+\end{figure}
+\newpage
+De ce schéma, nous pouvons ensuite calculer la fonction de transfert suivante en supposant l'AOP parfait:
+
+$$
+    V_- = \frac{\frac{V_1}{R}+\frac{V_s}{R}}{\frac{1}{R}+\frac{1}{R}}=\frac{V_1+V_s}{2}$$
+$$V_+=\frac{1}{2}V_2$$
+$$V_+=V_- \Leftrightarrow V_2=V_1+V_s\Leftrightarrow V_s=V_2-V_1 $$
+
+Nous obtenons bien l'équation de comparaison souhaitée. Pour réaliser ce circuit, il suffit donc d'avoir un AOP et 4 résistances de même valeur.
+\subsubsection{Correcteur de vitesse}
+
+Nous devons asservir deux composantes de notre système : la vitesse de la MCC et le courant d'induit. Pour cela, nous utiliserons un correcteur de type PI (Proportionnel Intégral) qui permettra de contrôler le régime transitoire mais aussi d'annuler l'erreur statique. Ce correcteur se construit à partir d'un circuit intégrateur en série avec un amplificateur.
+\begin{figure}[H]
+    \centering
+    \input{CircuitTikz/correcteur}
+    \caption{Circuit correcteur PI}
+\end{figure}
+
+De ce schéma, on déduit la fonction de transfert suivante :
+
+
+
+\begin{equation}
+    \begin{aligned}
+        V                 & = -V_e \cdot \frac{R + \frac{1}{jC\omega}}{R} = -V_e \cdot \frac{1 + jRC\omega}{jRC\omega}                        \\
+        V_s               & = -V_ \cdot \frac{R_2}{R_1} = V_e \cdot \frac{R_2}{R_1} \frac{1 + jRC\omega}{jRC\omega}                           \\
+        \text{si } \, p   & = j\omega \quad \implies \quad C(p) = \frac{V_s}{V_e} = \frac{R_2}{R_1} \frac{1 + RCp}{RCp} = P(1+\frac{1}{T_ip}) \\
+        \text{avec} \quad & \begin{cases}
+                                T_i = RC \\
+                                K = \frac{R_2}{R_1}
+                            \end{cases}
+    \end{aligned}
+    \label{eq:placeholder_label}
+\end{equation}
+
+Il faut à présent choisir les valeurs de composants pour obtenir les coefficients K et $T_i$ calculés précédemment.
+Pour rappel, pour l'asservissement de vitesse, nous avions :
+$$P = 2,27$$
+$$T_i = 0,044$$
+
+Grâce aux relations décrites plus haut, nous pouvons calculer les valeurs de résistances et condensateurs nécessaires.
+\newpage
+Les calculs effectués sont les suivants : \\
+\[K_{vi}=2,27 \Longrightarrow R_1=1200~\Omega \textbf{ et }R_2=2700 ~ \Omega \Longrightarrow K_{vi_{réel}} = \frac{2700}{1200} = 2,25\]
+\[T_{iv}=0,044~ s \Longrightarrow R=43~k\Omega \textbf{ et } C=1\cdot10^{-6}~F \Longrightarrow T_{vi_{réel}} = 43000\times1,10^{-6} \approx 0,043~ s\]
+
+
+
+
+\subsubsection{Correcteur de courant}
+
+Le circuit de correction du courant est le même que pour l'asservissement de vitesse, la seule différence est la valeur des composants. On rappelle que pour l'asservissement de courant, on a les valeurs suivantes :
+$$P = 6,219$$
+$$T_i = 0,00015$$
+
+Les valeurs des correcteurs sont donc calculées ainsi : \\
+\[K_{ci}=6,219<1 \Longrightarrow R_1=1100~\Omega \textbf{ et }R_2=6800~ \Omega \Longrightarrow K_{ci_{réel}} = \frac{6800}{1100} = 6,182\]
+\[T_{ci}=0,00015~ s \Longrightarrow R_8=1500~\Omega \textbf{ et } C=100,10^{-9}~ F \Longrightarrow T_{ci_{réel}} = 1500\times100\cdot10^{-9} \approx 0,00015~s\]
 \subsection{Circuit de mise en forme du signal tachymétrique}
+La dynamo tachymétrique ayant un gain de 6 V pour 1000 tr/min, si la consigne appliquée était trop élevée, nous dépasserions la limite maximale supportée par le hacheur qui est de 15 V. Pour remédier simplement à ça, nous avons rajouter un pont diviseur de tension par 2 avec 2 résistances identiques suivi par un AOP en suiveur en sortie de la dynamo tachymétrique.
 
 \subsection{Circuit de mise en forme du signal du codeur incrémental}
+Avant de discuter de la solution finale adoptée pour la mise en forme du signal du codeur incrémental, étudions d'abord son fonctionnement.
+\\
+
+Le codeur incrémental est un disque comportant 2 pistes : une piste extérieure et une piste intérieure. La piste extérieure est une série de fenêtres réparties équitablement autour du disque : ici on a un codeur incrémental avec 1800 fenêtres donc elles sont chacune décalées d'un angle de $\frac{2\pi}{1800}$. En pratique, une LED vient éclairer le disque en continu d'un côté et de l'autre, un photo-transistor va être éclairé à intervalle régulier. Une illustration du principe est présentée ci-dessous:
+\begin{figure}[H]
+    \centering
+    \input{CircuitTikz/schema_codeur}
+    \caption{Principe de fonctionnement du codeur incrémental}
+\end{figure}
+
+
+La fréquence à laquelle le transistor va être éclairé va être directement proportionnelle à la vitesse du moteur. Le photo-transistor va être alternativement saturé et bloqué et va donc fournir un signal carré à sa sortie, nommé $A$.
+\newpage
+La période de ce signal est ainsi : $$T=\frac{1}{1800}\cdot\frac{2\pi}{\Omega}$$ La piste intérieure est la même que la piste extérieure mais décalée d'un quart de l'angle entre deux fenêtres c'est-à-dire $\frac{1}{4}\cdot \frac{2\pi}{1800}$. Le signal représentant la variation de lumière à travers cette piste sera nommé $B$.\\
+Pour mettre en forme ces signaux et récupérer la vitesse du moteur, deux méthodes sont possibles. Ces deux méthodes exploitent la génération d'un signal particulier à partir du signal du codeur pour récupérer l'information de la vitesse. Sur la figure suivante sont présentés les formes d'onde du codeur ainsi que les signaux des deux méthodes permettant la récupération de l'information utile.
+\begin{figure}[H]
+    \centering
+    \input{CircuitTikz/codeur_incr}
+    \caption{Signaux liés au codeur incrémental}
+\end{figure}
+\textit{Pour s'assurer de la bonne qualité des signaux $A$ et $B$ à l'entrée de la carte, nous utiliserons deux comparateurs qui compareront les signaux du codeur avec $\frac{V_{DD}}{2}$. Nous obtiendrons ainsi en sortie des signaux carré de bonne qualité pour leur traitement. }
+\\
+\begin{itemize}[label=\textbullet]
+    \item \textbf{Méthode 1: Circuit monostable }\\
+          La première méthode consiste à concevoir un monostable qui produirait une impulsion de largeur $t_0$ fixée à chaque front montant du signal du codeur. Ainsi, on a la relation suivante:
+          $$<V_s>=V_{DD}\cdot \dfrac{t_0}{T}=\dfrac{1800\cdot \Omega}{2\pi}\cdot V_{DD}\cdot t_0 = \dfrac{1800\cdot V_{DD}\cdot t_0}{2\pi}\cdot \Omega$$
+          On a bien ici une tension directement proportionnelle à la vitesse, il est donc possible de récupérer cette information. Sachant que nous devons obtenir un gain identique à celui de la dynamo tachymétrique, il faut multiplier le signal par une constante $k'$ tel que si on note $k$ le gain de la dynamo tachymétrique \textit{(par rapport à une vitesse en rad/s)}, on ait: $$k'\cdot\dfrac{1800\cdot V_{DD}\cdot t_0}{2\pi}=k \Leftrightarrow k'= k\cdot\dfrac{2\pi}{1800\cdot V_{DD}\cdot t_0} = \Big(\dfrac{1}{2}\cdot \dfrac{6}{1000}\cdot\dfrac{30}{\pi}\Big)\cdot\dfrac{2\pi}{1800\cdot V_{DD}\cdot t_0}$$
+          Il y a une contrainte à respecter avec cette méthode, c'est le choix de $t_0$. En effet, ce dernier doit être plus petit que la période du codeur pour être certain qu'aucun front montant ne soit raté et donc ne fausse le résultat.\\ \\
+          \newpage
+          Dans la pratique, le monostable se construirait avec un \textbf{NE555} monté en monostable comme dans le schéma suivant:
+          \begin{figure}[H]
+              \centering
+              \input{CircuitTikz/ne555}
+              \caption{NE555 monté en astable}
+          \end{figure}
+
+          On aurait alors: $$t_0=\ln(3)\cdot R\cdot C$$
+    \item \textbf{Méthode 2: Circuit dérivateur}\\
+          L'autre méthode exploite le signal de sortie d'un circuit dérivateur. Le schéma de ce circuit est présenté ci-dessous:
+
+          \begin{figure}[H]
+              \centering
+              \input{CircuitTikz/derivateur}
+              \caption{Circuit dérivateur}
+          \end{figure}
+
+          La diode permet de ne garder qu'uniquement les alternances positives. \\ \\
+          En réponse à l’échelon de tension $V_{DD}$ imposé par le codeur et en notant $\tau=RC$, on sait qu'on a en sortie un signal régit par l'équation suivante:
+          $$v_s(t)=V_{DD}\cdot \exp\Big({-\frac{t}{\tau}}\Big)$$
+          On en déduit la valeur moyenne de ce signal:
+          $$<v_s(t)>=\frac{1}{T}\int_0^TV_{DD}\cdot\exp\Big({-\frac{t}{\tau}}\Big)~dt=\frac{\tau}{T}\cdot V_{DD}$$
+          On constate qu'on obtient le même résultat qu'avec la méthode 1, le gain à appliquer suit donc la même formule. \\ \\
+          La contrainte à respecter pour $\tau$ est qu'il doit être négligeable devant la période du codeur. En effet, il faut que le signal de sortie du dérivateur ait le temps d'atteindre son régime permanent avant l’échelon suivant. La justification est la même que pour la méthode 1 à la différence qu'ici $\tau$ ne doit pas seulement être inférieur à $T$ mais très inférieur.
+\end{itemize}
+Avec ces deux méthodes, nous obtiendrons des signaux contenant des harmoniques en plus de la valeur moyenne qui contient l'information utile : cela pourrait venir perturber le fonctionnement du système. De ce fait, pour obtenir un signal moins oscillant autour de la valeur moyenne, nous procéderons à un filtrage passe-bas. Il y a deux contraintes à respecter sur la fréquence de coupure:
+\begin{itemize}
+    \item Elle doit être assez basse pour atténuer suffisamment les harmoniques.
+    \item Elle ne doit pas être trop basse afin ne pas introduire un pôle non-négligeable qui pourrait venir ralentir la réponse de notre système.
+\end{itemize}
+Après de premières estimations en tenant compte de la vitesse nominale du moteur et du temps réponse souhaité pour le système, nous avons procédé à des tests empiriques par simulation sur PSIM. Nous sommes arrivés à une valeur concluante de fréquence de coupure d'environ 1 kHz.
+\\
+\\
+Finalement, compte-tenu de l'incertitude sur les composants que nous utiliserons, il est fort probable que les gains (\textit{cf. méthodes 1 $\&$ 2}) calculés et mise en œuvre ne soit pas exactement les bons. C'est pour cela que nous mettrons en œuvre un gain réglable que nous ajusterons lors des tests pour obtenir une réponse la plus proche possible de nos attentes. Il est important de d'abord filtrer puis amplifier pour éviter de saturer les AOPs.
+\\ \\
+Nous avons dans un premier temps simulé la méthode 1 en tenant compte de toute les remarques précédentes sur PSIM. Le schéma est présenté sur la figure ci-dessous:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.42\linewidth]{Images/Modelisation/PSIM/NE555.jpg}
+    \caption{Schéma de simulation de la méthode 1 sous PSIM}
+\end{figure}
+\textit{Il est important de noter que lorsque nous avons réalisé ces simulations, nous n'avions pas encore tous les éléments concernant le système (tension de sortie du capteur à l'état haut...).\\ De plus, ce n'est pas la méthode finale que nous avons décidé d'adopter, et le but de ces simulations était de nous assurer du fonctionnement de la méthode. Ainsi, certains éléments pourraient manquer de cohérence, mais cela ne retire pas les conclusions quant à son bon fonctionnement. Si nous avions choisi cette méthode, nous aurions, comme nous le verrons pour l'autre solution, approfondi la simulation avec les composants réels.} \\ \\
+Le gain se situe dans le même bloc que le filtre. Sur la figure suivante, on retrouve la réponse du système asservie avec le retour vitesse provenant du codeur. En rouge, on retrouve la réponse en sortie du circuit de mise en forme et en vert la réponse en sortie du capteur tachymétrique.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/Modelisation/PSIM/NE55_Ass.png}
+    \caption{Résultat méthode 1 }
+\end{figure}
+\textit{On a en abscisse le temps en seconde et en ordonnée la tension image de la vitesse en volt.} \\ \\
+On obtient bien les caractéristiques attendues et on conclut que la méthode fonctionne.
+\\
+
+Nous nous sommes assurés de la même façon avec succès du bon fonctionnement de la deuxième méthode. Au vu de sa simplicité, nous avons opté pour cette solution. Avant d'évoquer sa mise en œuvre, un dernier élément est à préciser. Le capteur tachymétrique renvoie non seulement une information sur la vitesse de rotation, mais aussi sur le sens grâce au signe de la valeur retournée. Cela permet d'asservir le moteur dans les deux sens. Ce n'est pour l'instant pas le cas avec notre circuit du codeur. Pour corriger cela, nous utiliserons un multiplexeur analogique dont le schéma est présenté ci-dessous:
+\begin{figure}[H]
+    \centering
+    \input{CircuitTikz/multiplexeur}
+    \caption{Multiplexeur analogique}
+    \label{fig:placeholder}
+\end{figure}
+Ce montage permutera entre le signal inversé ou non-inversé en fonction du signal appliqué à la base du MOSFET. Ce dernier proviendra du circuit \textbf{indicateur de sens de rotation} que nous verrons plus tard. \\
+\newpage
+Nous pouvons maintenant passer à la mise en œuvre complète du circuit de mise en forme.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{Images/Modelisation/PSIM/Circuit_codeur_pinal.png}
+    \caption{Schéma de simulation de la méthode 2 sous PSIM}
+    \label{fig:placeholder}
+\end{figure}
+On note l'ajout d'un suiveur avant le circuit dérivateur pour ne pas que les étages suivants n'ait d'influence sur la sortie du comparateur. Le filtre sera simplement un circuit RC. Nous exposerons les résultats de simulation du système complet dans le chapitre suivant.
 
 \subsection{Limiteur de courant}
+Afin de respecter le cahier des charges et limiter le courant d'induit à $1,1\cdot I_{nom}=5$ A, nous utiliserons un circuit limiteur de courant.
+Pour réaliser cela, nous avons pu mettre en place le circuit suivant à l'aide d'un AOP :
+
+\begin{figure}[H]
+    \centering
+    \input{CircuitTikz/limiteur_courant}
+    \caption{Circuit limiteur de courant}
+\end{figure}
+On réglera $R'$ pour obtenir la tension de seuil désirée.
 \subsection{Limiteur de la tension de commande}
+Ce limiteur est intégré au hacheur et permet de ne pas dépasser la tension de commande maximale.
 \subsection{Indicateur de sens de rotation}
+Pour obtenir l'information sur le sens du rotation du moteur, nous allons utiliser le circuit suivant:
+\begin{figure}[H]
+    \centering
+    \input{CircuitTikz/bascule_d}
+    \caption{Circuit indicateur de sens de rotation}
+\end{figure}
+Où \textbf{A} et \textbf{B} sont les signaux issus du codeur après passage dans les comparateurs de remise en forme. Avec ce circuit, en fonction du sens de rotation, $Q$ ou $\overline{Q}$ sera à l'état haut et éclairera une LED d'indication. En effet, dans un sens le signal A sera en avance sur B et en retard dans l'autre. Ainsi, au front montant de B, on récupère l'information sur le sens de rotation grâce à la valeur de A. On utilise aussi la sortie $\overline{Q}$ pour piloter le transistor du multiplexeur analogique.
+\subsection{Récapitulatif }
+
+Après avoir détaillé l'ensemble des circuits qui composent notre système, nous récapitulons ici l'ensemble des composants utilisés pour chaque montage et leur valeur réelle. Les composants ont été commandés sur le site marchand de Farnell. Dans notre cas, nous avons choisi d’utiliser principalement des éléments CMS à l’exception des potentiomètres et de la bascule D.
+
+
+\begin{table}[H]
+    \centering
+    \small
+    \setlength{\tabcolsep}{6pt}
+
+    \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X
+            >{\raggedright\arraybackslash}X}
+        \toprule
+        \textbf{Fonction}                  & \textbf{Composants et valeurs} \\
+        \midrule
+
+        Correcteur de vitesse              &
+        $R = 43\,\text{k}\Omega$,\;
+        $R_1 = 1,2\,\text{k}\Omega$,\;
+        $R_2 = 2,7\,\text{k}\Omega$,\;
+        $C = 1\,\mu\text{F}$,\;
+        AOP : TL084 (×2)                                                    \\
+
+        Correcteur de courant              &
+        $R = 1\,\text{k}\Omega$,\;
+        $R_1 = 1,1\,\text{k}\Omega$,\;
+        $R_2 = 6,8\,\text{k}\Omega$,\;
+        $C = 150\,\text{nF}$,\;
+        AOP : TL084 (×2)                                                    \\
+
+        Comparateur courant                &
+        $R = 1,2\,\text{k}\Omega$ (×4),\;
+        AOP : TL084                                                         \\
+
+        Comparateur vitesse                &
+        $R = 1,2\,\text{k}\Omega$ (×4),\;
+        AOP : TL084                                                         \\
+
+        Limiteur de courant                &
+        $R = 1,2\,\text{k}\Omega$ (×4),\;
+        $R' = 10\,\text{k}\Omega$ (×2),\;
+        AOP : TL084,\;
+        Diodes : 1N4148WS (×2)                                              \\
+
+        Indicateur de sens de rotation     &
+        Bascule D : CD4013,\;
+        LED rouge + LED jaune,\;
+        $R = 1\,\text{k}\Omega$ (×2)                                        \\
+
+        Circuit dérivateur                 &
+        $R = 1\,\text{k}\Omega$,\;
+        $C = 1\,\text{nF}$,\;
+        Diode : 1N4148WS,\;
+        AOP : TL084                                                         \\
+
+        Filtre RC                          &
+        $R = 1,1\,\text{k}\Omega$,\;
+        $C = 150\,\text{nF}$                                                \\
+
+        Multiplexeur analogique            &
+        $R = 1,1\,\text{k}\Omega$ (×4),\;
+        MOSFET : BSS138,\;
+        AOP : TL084                                                         \\
+
+        Comparateurs signaux codeur        &
+        $R = 1,1\,\text{k}\Omega$ (×2),\;
+        Comparateurs : LM2903 (×2)                                          \\
+
+        Amplificateur réglable pour codeur &
+        $R' = 10\,\text{k}\Omega$,\;
+        AOP : TL084                                                         \\
+        Diviseur du signal tachymétrique   & $R=1,2$ k$\Omega$ (x2)         \\
+        \bottomrule
+    \end{tabularx}
+
+    \caption{Tableau récapitulatif des composants utilisés}
+    \label{tab:composants}
+\end{table}
+Les notations des composants sont les mêmes que sur les circuits détaillés plus haut. La notation $R'$ correspond aux potentiomètres. En pratique, nous avons utilisé des TL084 qui inclut 4 AOPs, la notation $(\times2)$ dans le tableau signifie donc que nous avons utilisé 2 AOPs d'un seul composant TL084 pour le circuit.
+
+
+\section{Simulation du système réel}
+Maintenant que notre système réel est complètement dimensionné, nous pouvons passer à  sa simulation complète sur PSIM avant de passer à sa réalisation effective. Voici le schéma de notre système réel sous PSIM:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.\linewidth]{Images/Modelisation/PSIM/schm_reel_1.png}
+    \caption{Schéma de simulation du système réel sous PSIM - Boucle d'asservissement}
+    \label{fig:placeholder}
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.\linewidth]{Images/Modelisation/PSIM/schm_reel_2.png}
+    \caption{Schéma de simulation du système réel sous PSIM - Partie capteurs}
+    \label{fig:placeholder}
+\end{figure}
+Nous avons simulé grâce à ce schéma le bon fonctionnement du système complet avec \textbf{les deux capteurs} pour des consignes \textbf{positives} et \textbf{négatives}.
+\newpage
+Voici les résultats, on retrouvera en rouge les courbes théoriques attendues avec les composants blocs "parfaits" intégrés à PSIM et en vert les courbes réelles en sortie des capteurs correspondants:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.\linewidth]{Images/Modelisation/PSIM/tacchy_reel_plus.png}
+    \caption{Résultats pour une consigne positive avec le capteur tachymétrique}
+    \label{fig:placeholder}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.\linewidth]{Images/Modelisation/PSIM/tachy_reel_moins.png}
+    \caption{Résultats pour une consigne négative avec le capteur tachymétrique}
+    \label{fig:placeholder}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.1\linewidth]{Images/Modelisation/PSIM/Codeur_simu_reel_plus.png}
+    \caption{Résultats pour une consigne positive avec le codeur incrémental}
+    \label{fig:placeholder}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.\linewidth]{Images/Modelisation/PSIM/codeur_reel_moins.png}
+    \caption{Résultats pour une consigne négative avec le codeur incrémental}
+    \label{fig:placeholder}
+\end{figure}
+\textit{On a en abscisse le temps en seconde et en ordonnée l'image de la vitesse en volt}.\\
+\\
+On constate une très bonne correspondance entre théorie et système réel simulé ce qui valide donc notre dimensionnement. On peut à présent passer à la création de la carte électronique.
+
 

@@ -1,0 +1,23 @@
+\usetikzlibrary{shapes.geometric}
+\begin{tikzpicture}[transform shape,scale=0.9]
+	% Paths, nodes and wires:
+	\draw (4.418, 4.543) to[full led] (4.418, 2.293);
+	\node[shape=rectangle, fill={rgb,255:red,0;green,0;blue,0}, draw={rgb,255:red,0;green,0;blue,0}, line width=1pt, minimum width=0.465cm, minimum height=3.965cm] at (5.668, 3.043){};
+	\draw (5.418, 1.793) -- (5.918, 1.793);
+	\node[shape=rectangle, fill={rgb,255:red,0;green,0;blue,0}, draw={rgb,255:red,0;green,0;blue,0}, line width=1pt, minimum width=0.465cm, minimum height=0.215cm] at (5.668, 4.918){};
+	\node[shape=rectangle, fill={rgb,255:red,255;green,255;blue,255}, draw={rgb,255:red,0;green,0;blue,0}, line width=1pt, minimum width=0.465cm, minimum height=3.152cm] at (5.668, 3.199){};
+	\node[shape=rectangle, fill={rgb,255:red,0;green,0;blue,0}, draw={rgb,255:red,0;green,0;blue,0}, line width=1pt, minimum width=0.465cm, minimum height=1.246cm] at (5.668, 3.293){};
+	\node[npn] at (7.418, 3.273){};
+	\node[shape=ellipse, draw, line width=0.5pt, minimum width=1.15cm, minimum height=1.068cm] at (7.334, 3.25){};
+	\draw[-latex] (6.241, 4.362) -- (6.991, 3.862);
+	\draw[-latex] (6.091, 4.188) -- (6.841, 3.688);
+	\draw (7.418, 4.043) -| (7.418, 4.543);
+	\draw (7.418, 2.503) -| (7.418, 2.043);
+	\node[circ] at (4.418, 4.543){};
+	\node[circ] at (4.418, 2.293){};
+	\node[circ] at (7.418, 4.543){};
+	\node[circ] at (7.418, 2.043){};
+	\node[shape=rectangle, minimum width=2.215cm, minimum height=1.215cm] at (4.043, 3.043){} node[anchor=north west, align=left, text width=1.827cm, inner sep=6pt] at (2.918, 3.668){LED};
+	\node[shape=rectangle, minimum width=2.922cm, minimum height=1.215cm] at (9.521, 2.918){} node[anchor=north west, align=left, text width=2.534cm, inner sep=6pt] at (8.043, 3.543){Photo-transistor};
+	\node[shape=rectangle, minimum width=2.215cm, minimum height=1.215cm] at (6.043, 0.293){} node[anchor=north west, align=left, text width=1.827cm, inner sep=6pt] at (4.918, 0.918){Disque};
+\end{tikzpicture}
